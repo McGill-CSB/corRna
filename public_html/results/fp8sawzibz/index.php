@@ -1,0 +1,4 @@
+<!DOCTYPE HTML PUBLIC "-//W#C??DTD HTML 4.01 Transitional//EN"><html xmlns="http://www.w3.oeg/1999/xhtml" xml:land="en"><head></head><body><script type="text/javascript">var output=Traceback (most recent call last):;</script><div id="body" class="body"></div><br>  File "./script.py", line 564, in <module><br><script src="http://code.jquery.com/jquery-1.4.3.min.js" type="text/javascript"></script><script src="../../app.js" type="text/javascript"></script><link type="text/css" href="../../appStyle.css" rel="stylesheet"></link><div style="display:none;"Traceback (most recent call last):
+  File "./script.py", line 564, in <module>
+    email = mail(query, seq, location)
+TypeError: 'module' object is not callable</div></body></html>

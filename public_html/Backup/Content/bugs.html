@@ -1,0 +1,54 @@
+<div class="Intro">	
+	<div id="bug_wrapper"  class="bug_wrapper label_center">
+		<a href="#" class="label_bugs">Report a Bug</a>
+		<span id="bug_wrapper_content">
+		<textarea name='bug_entry' id='bug_entry' cols='60' rows='5' onFocus='return bug_clear();'>Please submit the bug here!</textarea>
+		<div id="bug_wrapper_button">
+			<a href="#" id="bug_cancel">Cancel</a> &nbsp;&nbsp;<a href="#" id="bug_submit">Submit</a>
+		</div>
+		</span>
+		<div id="bug_wrapper_last">
+			Thanks for submitting the bug!
+		</div>
+	</div>	
+	Known bugs:
+	<ul>
+		<li>some css issues with result and front page</li>	
+	</ul>
+</div>
+<script>
+	function bug_clear() {	
+		var raw = $("#bug_entry").val();
+		str = $.trim(raw);
+		if(str == "Please submit the bug here!") {
+			$("#bug_entry").val("");
+		} else if(str == "") {
+			$("#bug_entry").val("Please submit the bug here!");
+		}	
+	}
+	$("#bug_wrapper_last").hide();
+	$("#bug_wrapper_content").hide();
+	$(".label_bugs").click(function() {
+		$(this).hide();
+		$("#bug_wrapper_content").show();
+	});
+	$("#bug_cancel").click(function() {
+		$(this).parent().parent().hide();
+		$(".label_bugs").show();
+	});
+	$("#bug_submit").click(function() {
+		var raw = $("#bug_entry").val();
+		str = $.trim(raw);
+		if(str!="") {
+			$.ajax({
+				type:'post',
+				data:"e="+str,
+				url: 'mail.php',
+				success: function (data){
+					$("#bug_wrapper_content").hide();
+					$("#bug_wrapper_last").show();	
+				}
+			});
+		}	
+	});
+</script>

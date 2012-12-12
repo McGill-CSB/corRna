@@ -1,0 +1,62 @@
+<div class="Intro">
+        <b> Cor-RNA: Predict and analyze deleterious mutations </b> <br> 
+        McGill Centre for Bioinformatics<br>
+	Montreal, Quebec, Canada <br>
+        <p>
+	<b>Description</b>: Cor-RNA his web-server provides an unbiased way to 
+	explore the RNA mutational landscape and a rank of the 
+	deleterious nature of the predicted mutation sequences. 
+	These two novel strategies use RNAmutants software [1] 
+	and could be a valuable tool in predicting disease-associated 
+	RNA mutations that may significantly alter RNA secondary structure.
+        </p>
+	
+	<p><b>Input</b>: The user is asked to input a RNA sequence.
+	 The user can then specify the way in which the application
+	 will search through the RNA sequence mutation landscape.
+	</p>
+
+	<p><b>Processing method</b>: The first application uses a new 
+	method for probing the RNA mutation landscape. This method involves 
+	using RNAmutants to fix the C and G nucleotide content of the 
+	sequence when probing the RNA mutation landscape [2]. The second 
+	strategy measures the .deleterious-ness. of the secondary structure 
+	of a mutation sequence when compared to its wildtype. This was done 
+	by correlating the Boltzman partition function of base pairing 
+	probabilities of each sampled mutation sequence with the wild-type,
+	 as described in [3]. Finally, the significance of the predicted 
+	mutation sequences was analyzed by a bootstrapping method. This 
+	method compared the deleterious nature of the candidate mutation 
+	sequence a set of randomly generated mutation sequences to which 
+	the aforementioned correlation method has been applied.
+	</p>
+
+
+	<p><b>Output</b>: A table is displayed with the sequence mutation, 
+	mean free energy, optimal secondary structure, correlation value 
+	and significance. A web-link to the results is provided at the 
+	time of data submission which will report the status of the job. 
+	If the user provides an email address, this link and the results 
+	will also be sent by email. 
+	</p>
+
+	References
+	<font size="2"><ol>
+	<li>J. Waldispuhl, S. Devadas, B. Berger and P. Clote (2008), 
+		Efficient Algorithms for Probing the RNA Mutation Landscape, 
+		<i>PLoS Computational Biology</i>, 4(8):e1000124.</li>
+	<li>J. Waldispuhl and Y. Ponty (Accepted for 2011) An unbiased 
+		adaptive sampling algorithm for the exploration of RNA mutational 
+		landscapes under evolutionary pressure. Accepted at the 15th Annual 
+		International Conference on Research in Computational Molecular Biology 
+		(RECOMB 2011) Vancouver.</li>
+	<li>M. Halvorsen, J. Martin, S. Broadaway, A. Laederach (2010) 
+		Disease-Associated Mutations That Alter the RNA Structural Ensemble. 
+		<i>PLoS Genetics</i>, 6(8).</li>
+	<li>J. Waldispuhl, S. Devadas (2009), B. Berger and P. Clote. RNAmutants: 
+		A web server to explore the mutational landscape of RNA secondary structures, 
+		<i>Nucleic Acids Research, Web Server issue</i>, p. 281-286.</li>
+	</ol></font>
+	
+</div>
+

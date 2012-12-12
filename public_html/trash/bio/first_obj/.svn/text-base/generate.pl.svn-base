@@ -1,0 +1,119 @@
+#! /usr/bin/env python
+import sys
+import re
+import commands
+import shutil
+import getopt
+import os, glob, sys
+import os.path
+from multiprocessing import Process
+
+DEBUG = True
+dummy = 1
+def usuage():
+	print "-s [sequence]"
+def startRNAfold(type, name):
+	print "Start RNAfold" 
+	#path = './'
+	#for infile in glob.glob( os.path.join(path, '*.gen')):
+	infile = name
+	print infile
+	f = open(infile, 'r')
+	for line in f:
+		x = open('readline.tmp', 'w')
+		x.write(line)
+		x.close()
+		out = commands.getoutput('cat readline.tmp @- | RNAfold -p -d0')
+		shutil.move('dot.ps',type+'-'+line.strip()+'.ps')			
+	f.close()
+	commands.getoutput('mv '+infile+' '+infile+'.done')
+	print "RNAfold completed"
+def wildtype(sequence):
+	x = open('readline.tmp', 'w')
+	x.write(sequence)
+	x.close()
+	commands.getoutput('cat readline.tmp @- | RNAfold -p -d0')
+	while(os.path.exists('rna.ps') != True):
+		dummy = 1
+	shutil.move('dot.ps','wildtype.ps')
+
+def getbpp():
+	print "Start ps-adapter"
+	commands.getoutput('./ps-adapter.pl')
+	print "ps-adapter completed"
+
+def correlate():
+	path = './'
+	print "Start correlate"
+	for infile in glob.glob( os.path.join(path, '*.in')):
+		p = Process(target=multi, args=(infile,))
+    		p.start()
+		
+def multi(name):	
+	out = commands.getoutput('./correlate.py -x wildtype.ps.in -y '+name)
+	print out
+
+	
+def par(sequence):
+	pid = os.fork()
+	if(DEBUG):
+		print "process spawned"
+	if pid:
+		if(DEBUG):
+			print "Parent is working with RNAmutants"
+		#we are @ parent
+		#os.waitpid(pid, 0)
+		commands.getoutput('./RNAmutants -l lib -m 5 -s '+sequence + ' > rmutants.out')
+		while(os.path.exists('rmutants.out') != True):
+			dummy = 1
+		print "RNAmutants computation completed..."
+		commands.getoutput('./mutants-adapter.pl')
+		while(os.path.exists('rmutants.out.gen') != True):
+			dummy = 1
+		print "mutants-adapter parsing completed.."
+		commands.getoutput('mv rmutants.out rmutants.out.done')
+		startRNAfold("RM","rmutants.out.gen")
+		os.waitpid(pid,0)
+	else:
+		if(DEBUG):
+			print "Child is working with fixedGCSampling"
+		#we are the child
+		commands.getoutput('./fixedCGSampling.py '+sequence + ' -n 10 -g 0.6 -e 0.05 > fixedGC.out')
+		while(os.path.exists('fixedGC.out') != True):
+			dummy = 1
+		print "FixedGC computation completed..."
+		commands.getoutput('./gc-adapter.pl')
+		print "gc-adapater parsing complete..."
+		while(os.path.exists('fixedGC.out.gen') != True):
+			dummy = 1
+		commands.getoutput('mv fixedGC.out fixedGC.out.done')
+		startRNAfold("GC","fixedGC.out.gen")
+
+### main ####
+try:
+	optlist, args = getopt.getopt(sys.argv[1:],'s:h',["help"])
+except getopt.GetoptError, err:
+	print str(err)
+	sys.ext(2)
+
+sequence = ''
+for opt, query in optlist:
+	if opt == "-s":
+		sequence = query
+	elif opt in ("-h", "--help"):
+		usuage()
+		sys.exit()
+	else:
+		assert False, "unhandled option"
+if(sequence !=  ''):
+	print "Lets start...."
+	commands.getoutput("rm bpp-results.txt | rm *.in | rm *.ps")
+	wildtype(sequence)	
+	par(sequence)
+	getbpp()
+	correlate()
+	
+print "Completed"
+print "GC-* means sequence produced from fixedCGSampling"
+print "RM-* means sequence produced from RNAmutants"
+print "results can be found in bpp-results.txt"

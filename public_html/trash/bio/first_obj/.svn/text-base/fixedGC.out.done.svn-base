@@ -1,0 +1,584 @@
+  B[0]=30	[0.62-0.62]	1.0.2f->0.62 
+  B[1]=30	[0.63-0.63]	1.0.2f->0.63 
+  B[2]=30	[0.66-0.66]	1.0.2f->0.66 
+  B[3]=18	[0.67-0.67]	1.0.2f->0.67 
+  B[4]=8	[0.69-0.69]	1.0.2f->0.69 
+  B[5]=9	[0.69-0.69]	1.0.2f->0.69 
+  B[0]=60	[0.62-0.62]	0.5.2f->0.62 1.0.2f->0.62 
+  B[1]=60	[0.62-0.63]	0.5.2f->0.62 1.0.2f->0.63 
+  B[2]=60	[0.65-0.66]	0.5.2f->0.65 1.0.2f->0.66 
+  B[3]=45	[0.65-0.67]	0.5.2f->0.65 1.0.2f->0.67 
+  B[4]=29	[0.66-0.69]	0.5.2f->0.66 1.0.2f->0.69 
+  B[5]=29	[0.67-0.69]	0.5.2f->0.67 1.0.2f->0.69 
+> Sampled 60 sequence(s) and secondary structure(s) with 0 mutations
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-13.7
+  .((((((..(.(((....((.....))....)))..)..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((..............)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.8
+  .((((((..(.(((....(.......)....)))..)..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-13.7
+  .((((((..(.(((....((.....))....)))..)..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..((...))...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((......(...)...)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((...(......)...)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((..............)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((....(....)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((.((.....))....)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(.....)...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(.....)...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((..............)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(.....)...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.4
+  .((((((..(.(((.................)))..)..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.8
+  .((((((..(.(((....(.......)....)))..)..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..((...))...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.8
+  .((((((..(.(((....(.......)....)))..)..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-9.6
+  .((((((..(.(((..(..........)...)))..)..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((.....(...)....)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((........)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((..............)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((..............)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..((...))...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((..((...))...))))))........))))))
+> Sampled 60 sequence(s) and secondary structure(s) with 1 mutations
+  AGCGGGGGgGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.5
+  .((((((((.(((.(((........))).).)).))...))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGaCCGACCCCGC	-11.0
+  .((((((((((((..((...))...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGcGCCCGACCCCGC	-11.0
+  .((((((((((((..((...))...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.9
+  .(((((((.(((((....((.....))....))))))..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCaACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.((...))..)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGaGCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCaACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.(.....)..)))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.(.....)..)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGuCCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+  AGCGGGGGAGACAUcUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .(((((((((((...(.....)....)))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.((...))..)))))))........))))))
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.9
+  .(((((((.((((.....((.....)).....)))))..))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+  AGCGGGGGAGACAcAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUuCCCGACCCCGC	-11.0
+  .((((((((((((..(......)..))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUcCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.9
+  .(((((((.(((((....(.......)....))))))..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCaUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.(.....)..)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCaCGACCCCGC	-11.0
+  .(((((((((((((((...)))...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCuUGCCCGACCCCGC	-11.0
+  .((((((((((((((.....))...))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.((...))..)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCuGACCCCGC	-11.0
+  .(((((((((((((((...)))...))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .((((((((((((..((...))...))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCuGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUcCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUaCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCgUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCuACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.(......).)))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCgUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.((...))..)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCaUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGuCCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCuUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-11.0
+  .(((((((((((..............)))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCgGACCCCGC	-11.0
+  .(((((((((((.(((...)))....)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCaUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((.((...))..)))))))........))))))
+  AGCGGGGGgGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-12.9
+  .(((((((((.(((....((.....))....))))))..))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUcCCCGACCCCGC	-7.6
+  ..(((((((((((..(......)..))))))........))))).
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCgCGACCCCGC	-11.0
+  .((((((((((((............))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGcCCCCGC	-15.4
+  .(((((((.(.(((....((.....))....)))..).)))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((.((......)).))))))........))))))
+> Sampled 60 sequence(s) and secondary structure(s) with 2 mutations
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCaUGCCCGACCCCGC	-11.0
+  .(((((((((((((.(......).)))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-22.9
+  .((((((.((((((....((.....))....))))))..))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGaCuGACCCCGC	-11.0
+  .(((((((((((((........)..))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAgcUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((((...)))).))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCaUGCCCGACCCCGC	-11.0
+  .(((((((((((((.((...))..)))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCaACCCCGC	-11.0
+  .(((((((((((((.((...))..)))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAGuaUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCaUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCgUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUCGUGCCCGcCCCCGC	-22.1
+  .(((((((.(((((....((.....))....)))))..)))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCgUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCaUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAuCCUGUCUCGUGCCCGuCCCCGC	-11.0
+  .(((((((((((..............)))))........))))))
+  AGCGGGGGAGACAUAUAUCAUAaCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .(((((((((((((((...)))...))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCuCGACCCCGC	-11.0
+  .(((((((((((((..........)))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCaUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAgAUAUCAUAGuCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+> Sampled 45 sequence(s) and secondary structure(s) with 3 mutations
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCaGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-15.2
+  .(((((((((((((.................))))))).))))))
+  AGCGGGGGAGACAggUAUCAUuGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUaCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGcGACAUAUAUCAUAGCCUGUgUCGUGCCCGcCCCCGC	-21.1
+  .((((((((((((((((........))))).))...)))))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCaUGUCUCGgGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUuUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCuUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUcCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUgAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGaGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-15.2
+  .((((((((((((.....((.....)).....)))))).))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGuCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCgCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCaGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGgCAUAUAUCAUAGaCUGUCUCGUGCCCGcCCCCGC	-21.2
+  .(((((((.(((((....(.......)....)))))..)))))))
+  AGCGGGGGgGACAcAUAUCAUAGCCUGUaUCGUGCCCGACCCCGC	-12.9
+  .(((((((((.(((((((........)))).))))))..))))))
+  AGCGGGGGAGACAUgUAUCAUAGCgUGUCUCGUaCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAgcUAUCAUAGgCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-15.2
+  .(((((((((((((....((.....))....))))))).))))))
+  AGCGGGGGAGACAggUAUCAUuGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCuACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUCGUGCCuGcCCCCGC	-17.6
+  .((((((((((((.....((.....)).....))))).)))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-15.2
+  .(((((((((((((....((.....))....))))))).))))))
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUuGUGCCCGuCCCCGC	-21.5
+  .(((((((.((((((...((.....))...))))))..)))))))
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUCGUGCCCucCCCCGC	-19.7
+  .(((((((((((((....((.....))....))))).))))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCuGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUuGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-15.2
+  .(((((((((((((.................))))))).))))))
+  AGCGGGGGAGACAggUAaCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUaAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUuCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAUgUAUCAUAGCaUGUCUCGUGCCCGuCCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGgGACAgAUAUCAUAGCCUGUCUgGUGCCCGACCCCGC	-12.9
+  .(((((((((.((((((........))))))...)))..))))))
+  AGCGGGGGAGACAUAcAUCAUAGuaUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGcgGgCAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	-15.3
+  .(((((((((((((....((.....))....))))))).))))))
+  AGCGGGGGAGACAggUAUuAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUuUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCcACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCaCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUuUCAUAGCCUGUCUCGUGCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+> Sampled 29 sequence(s) and secondary structure(s) with 4 mutations
+  AGCGGGGGAGgCAUgUAUCAUAGCCUGUCUCGUGCCCucCCCCGC	-26.4
+  .((((((((((((((...((.....))...)))).))))))))))
+  AGCGGGGGAGACAUgUAaCAUAGCgUGUCUCGUGCCCGgCCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggcAUCAUAGCCUGUCUCGUGCCaGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAUgcAUCAUAGCaUGUCUCcUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggcAUCAUAGCCUGUCUCGUGCCCaACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAgcUAUCAUAGgCUGUCUCcUGCCCGACCCCGC	-11.0
+  .(((((((((((.(((......))).)))))........))))))
+  AGCGGGGugGgCAUAUAUCAUAGCCUGgCUCGUGCCCGACCCCGC	-16.2
+  .(((((((((((((...(((.....)))...)))))).)))))))
+  AGCGGGGGAGACAggUuUCAUAGCCUGUCUCaUGCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggUuUCAUAGCCUGUCUCGUGCCuGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGgGgCAUAUAUgAUAGCCUGUCUCGUGCCCcACCCCGC	-15.2
+  .(((((((((((((....(((.....)))..))))))).))))))
+  AGCGGGGGAGACAggUAUCgUAGCCUGUCUCGUGCCaGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGgCAUAUgUCAUAGCCUGUCUCGUGCCCucCCCCGC	-26.4
+  .(((((((((((((..(.((.....)).)..))).))))))))))
+  AGCGGGGGgGACAUAUAUCAgAGCCUGUCUCGUGuCCGcCCCCGC	-18.5
+  .(((((((((((((....(((...)))....)))))).)))))))
+  AGgGGGGGAGACAggUAUCAUAGCCUGUCUCcUGCCCGACCCCGC	-27.2
+  .(((.(((((((((((......))))))))))).)))........
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGUCUCGUGCCuacCCCCGC	-17.6
+  .(((((((((((((....((.....))....)))))).)))))))
+  AGCGGGGGAGACAggUAUCAUuGCCUGUCUCGUGCCuGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUAUuAUAGCCUGUCUCaUGCCCGACCCCGC	-11.0
+  .((((((((((((((........))))))))........))))))
+  AGCGGGGGAGACAggUuUCAUAGCCUGUCUCGUGaCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggUAUCAUuGCCUGUCUCGUGCCCuACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAUAUAUCAgAGCCUGUCUCGUGuCuGcCCCCGC	-17.6
+  .(((((((((((((....(((...)))....)))))).)))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGaCUCGUGCCCcACCCCGC	-15.2
+  .(((((((((((((...(((.....)))...))))))).))))))
+  AGCGGGGcAGgCAUgUAUCAUAGCCUGUCUCGUGCCuGACCCCGC	-15.3
+  .((((((((((((((...((.....))...)))))))).))))))
+  AGCGGGGGgGACAUAgAUCAUAGCCUGUCUCGUGuCCcACCCCGC	-15.2
+  .((((((((((((((((.(.......)))).))))))).))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCuUGUCUCGUGCCCGcCCCCGC	-18.5
+  .(((((((((((((....((.....))....)))))).)))))))
+  AGCGGGGGAGACAggUAUCAUgGCCUGUCUCGUGCCCuACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACgggUAUCAUAGCCUGUCUCGUGCCaGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGcGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACuCCGC	-6.2
+  ..((((((((((((((......))))))))))..)))).......
+  AGCGGGGcgGgCAUAUAUCAUAGCCUGUCUuGUGCCCGACCCCGC	-15.3
+  .((((((((((((((...(.......)...)))))))).))))))
+  AGCGGGGGAGACAggUAUCAaAGCCUGUCUCGUaCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+> Sampled 29 sequence(s) and secondary structure(s) with 5 mutations
+  AGCGGGGGAGgCAUAUAUCAUAGCCUGauUCGUGCCuGcCCCCGC	-17.6
+  .((((((((((((...(((.......)))...))))).)))))))
+  AGCGGGGGAGACAggUAUCAUuGCCUGUCUCGcGaCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggUAUuAUAGCCUGUCUCGUGCuCGgCCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGgCAUAaAUCAUAGCCUGUCUuGUGCCucACCCCGC	-15.2
+  .(((((((((((((((..((.....))..))))))))).))))))
+  AGCGGGGGgGgCAUAUAUCAUAGCCUGauUCGUGCCCGcCCCCGC	-18.5
+  .((((((((((((...((((.....))))...))))).)))))))
+  AGCGGGGGAGACAggUAUCAgAGCCUGUCUCaUGuCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGcGgCAUAUAUCAUAGCuUGUCUCGUGuCCGcCCCCGC	-27.7
+  .(((((((((((((....((.....))....))).))))))))))
+  AGCGGGGGcGACAaAUAUCAgAGCCUGUCUCGUGuCCGcCCCCGC	-23.4
+  .((((((((((((.....(((...))).....))).)))))))))
+  AGCGGGGGAGgCAUAgAUCAUAGCCgGUCUCGUGCCucACCCCGC	-15.2
+  .((((((((((((((((((......))))).))))))).))))))
+  AGCGGGGGAGACAggcAUuAUAGCCUGUCUCGUuCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAaCAUAGCCUGUCUCGUGCCCucCCCCGC	-13.8
+  .((((((((((((((........)))))))........)))))))
+  AGCGGGGGAGACAggcAUCAUuGCCUGUCUCGUGaCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggcAUCAUuGCCUGUCUCGUGCCCuACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGcgGACAUAUgUCAUAGCCUGaCUCGUGuCCGACCCCGC	-15.3
+  .(((((((((((((..((((.....))))..))))))).))))))
+  AGCGGGGGgGgCAUAUAUCAUAGuCUGUCUuGUGCCCcACCCCGC	-15.2
+  .((((((((((((((...((.....))...)))))))).))))))
+  AGCGGGGGAGACAggUuUCAaAGCCUGUCUCGUGgCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggcuUCAUAGCCUGUCUCGUGCuCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGuGACAggUAUCAUAGCCUGUCaCGUGgCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGgCAUAgAUCAUAGCCUGUCUCGUGCCuccCCCCGC	-17.6
+  .((((((((((((..(..((.....))..)..))))).)))))))
+  AGCGGGGGAGACAggUAUCAauGCCUGUCUCGUuCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGAGACAggcAUCAaAGCCUGUCUCGUGCCuGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGgCAUAUAgCAUAGCCUGUCUuGUGCCuGcCCCCGC	-17.6
+  .((((((((((((((..(((.....)))..))))))).)))))))
+  AGCGGGGGAGACAggUAUuAUAaCCUGUCUCGUGCCCuACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGgCAUAUgUCAUAGCCUGgCUCGUGCCucACCCCGC	-15.2
+  .((((((((((((...((((.....))))...)))))).))))))
+  AGCGGGGGAGACAggcAUCAUuGCCUGUCUCuUGCCCGACCCCGC	-11.0
+  .((((((((((((((((....))))))))))........))))))
+  AGCGGGGGgGACAUAUgUCAUAGCCUGgCUCGUGuCCcACCCCGC	-15.2
+  .(((((((((((((..((((.....))))..))))))).))))))
+  AGuGGGGGAGACAggcAUCAUAGCCUGUCUCGUGCCCuACCCCGC	-9.1
+  .(((((((((((((((......)))))))))........))))))
+  AGCGGGGGAGACAggUAUaAUAGCCUGUCUCGUuCCCGcCCCCGC	-13.8
+  .(((((((((((((((......))))))))........)))))))
+  uGCGGGGGAGACAggUAgCAUAGCCUGUCUCaUGCCCGACCCCGC	-11.0
+  .(((((((((((((((......)))))))))........))))))

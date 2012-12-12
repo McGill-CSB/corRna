@@ -1,0 +1,120 @@
+>wildtype
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGACCCCGC
+.((((((((((((............))))))........)))))) (-16.00)
+.((((((((((((............))))))(....)..)))))) [-17.62]
+.((((((((((((............))))))(....)..)))))) {-13.70 d=1.21}
+ frequency of mfe structure in ensemble 0.0716492; ensemble diversity 2.07  
+>A68C
+AGCGGGGGAGACAUCUAUCACAGCCUGUCUCGUGCCCGACCCCGC
+.((((((((((((.((.....))..))))))........)))))) (-16.20)
+.((((((((((((.{{.....,}..))))))(....)..)))))) [-18.05]
+.((((((((((((.(.......)..))))))(....)..)))))) {-12.90 d=1.89}
+ frequency of mfe structure in ensemble 0.0499785; ensemble diversity 2.67  
+>U71C
+AGCGGGGGAGACAUAUACCACAGCCUGUCUCGUGCCCGACCCCGC
+.((((((((((((............))))))........)))))) (-16.00)
+.((((((((((((............))))))(....)..)))))) [-17.63]
+.((((((((((((............))))))(....)..)))))) {-13.70 d=1.18}
+ frequency of mfe structure in ensemble 0.0705993; ensemble diversity 2.02  
+>C74U
+AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC
+.((((((((((((............))))))........)))))) (-16.00)
+.((((((((((((..,.........))))))(....)..)))))) [-17.75]
+.((((((((((((............))))))(....)..)))))) {-13.70 d=1.50}
+ frequency of mfe structure in ensemble 0.0588758; ensemble diversity 2.60  
+>A75U_G76C_C77U
+AGCGGGGGAGACAUAUAUCACUCUCUGUCUCGUGCCCGACCCCGC
+.((((((((((((............))))))........)))))) (-16.00)
+.((((((((((((............))))))(....)..)))))) [-17.65]
+.((((((((((((............))))))(....)..)))))) {-13.70 d=1.71}
+ frequency of mfe structure in ensemble 0.0685382; ensemble diversity 2.95  
+>C77U
+AGCGGGGGAGACAUAUAUCACAGUCUGUCUCGUGCCCGACCCCGC
+.((((((((((((.((......)).))))))........)))))) (-17.20)
+.((((((((((((.((......)).))))))(....)..)))))) [-18.69]
+.((((((((((((.((......)).))))))(....)..)))))) {-14.90 d=1.37}
+ frequency of mfe structure in ensemble 0.0898104; ensemble diversity 2.32  
+>C84A_U86G
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUAGGGCCCGACCCCGC
+.((((((..((......))...((((.....))))....)))))) (-17.10)
+.(((((({{,.......))...((((.....))))....)))))) [-18.31]
+.((((((((........))...((((.....))))....)))))) {-16.40 d=2.33}
+ frequency of mfe structure in ensemble 0.140543; ensemble diversity 3.28  
+>C84A_U86A
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUAGAGCCCGACCCCGC
+.((((((.(((((............))))).........)))))) (-14.30)
+.((((((.(((({.........,..})))).,.......)))))) [-15.16]
+.((((((.(((((............))))).........)))))) {-14.30 d=3.49}
+ frequency of mfe structure in ensemble 0.2486; ensemble diversity 5.50  
+>U86G
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGGGCCCGACCCCGC
+.((((((..((......))...(((((...)))))....)))))) (-17.60)
+.(((((((((({,....,,...{,,|}}}})|,,,.}..)))))) [-19.66]
+.(((((((((((..............)))))(....)..)))))) {-14.84 d=6.10}
+ frequency of mfe structure in ensemble 0.0352551; ensemble diversity 7.68  
+>C90A_A92G
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCAGGCCCCGC
+.((((((....)..........(((((.(....).)))))))))) (-16.60)
+.((((((....)..........(((((.(....).)))))))))) [-19.33]
+.((((((....)..........(((((.(....).)))))))))) {-16.60 d=1.03}
+ frequency of mfe structure in ensemble 0.58379; ensemble diversity 1.80  
+>C92G
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGGCCCCGC
+.((((((((((((............))))))........)))))) (-16.00)
+.((((((((((((............)))))){....}..)))))) [-17.40]
+.((((((((((((............))))))(....)..)))))) {-13.40 d=1.53}
+ frequency of mfe structure in ensemble 0.103805; ensemble diversity 2.58  
+>C90A
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCAGACCCCGC
+.((((((((((((............))))))........)))))) (-16.00)
+.((((((((((((............)))))),...,...)))))) [-16.98]
+.((((((((((((............))))))........)))))) {-16.00 d=1.73}
+ frequency of mfe structure in ensemble 0.205116; ensemble diversity 2.99  
+>A92U
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGUCCCCGC
+.((((((((((((............))))))........)))))) (-16.00)
+.((((((((((((............)))))){....}..)))))) [-17.30]
+.((((((((((((............))))))(....)..)))))) {-13.30 d=1.30}
+ frequency of mfe structure in ensemble 0.122083; ensemble diversity 2.15  
+>A92C
+AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGCCCCCGC
+.((((((((((((............)))))........))))))) (-16.40)
+.((((((((((((............))))))((....)))))))) [-19.19]
+.((((((((((((............))))))((....)))))))) {-14.20 d=1.64}
+ frequency of mfe structure in ensemble 0.010817; ensemble diversity 2.81  
+
+All files:: 
+$VAR1 = '/home/comp561/trials/A68C_dp.ps';
+$VAR2 = '/home/comp561/trials/A75U_G76C_C7_dp.ps';
+$VAR3 = '/home/comp561/trials/A92C_dp.ps';
+$VAR4 = '/home/comp561/trials/A92U_dp.ps';
+$VAR5 = '/home/comp561/trials/C74U_dp.ps';
+$VAR6 = '/home/comp561/trials/C77U_dp.ps';
+$VAR7 = '/home/comp561/trials/C84A_U86A_dp.ps';
+$VAR8 = '/home/comp561/trials/C84A_U86G_dp.ps';
+$VAR9 = '/home/comp561/trials/C90A_A92G_dp.ps';
+$VAR10 = '/home/comp561/trials/C90A_dp.ps';
+$VAR11 = '/home/comp561/trials/C92G_dp.ps';
+$VAR12 = '/home/comp561/trials/U71C_dp.ps';
+$VAR13 = '/home/comp561/trials/U86G_dp.ps';
+$VAR14 = '/home/comp561/trials/wildtype_dp.ps';
+
+Analyzing...
+Parsing Completed...
+Please check ur current directory for ur files
+tip to find ur files, enter this in terminal
+ls * | grep *.in
+Correlating against wildtype_dp.ps.in
+The Pearson's coefficient of correlation is 0.936157480089 against A68C_dp.ps.in 
+The Pearson's coefficient of correlation is 0.891971039071 against A75U_G76C_C7_dp.ps.in 
+The Pearson's coefficient of correlation is 0.870977727684 against A92C_dp.ps.in 
+The Pearson's coefficient of correlation is 0.985526656537 against A92U_dp.ps.in 
+The Pearson's coefficient of correlation is 0.962256078393 against C74U_dp.ps.in 
+The Pearson's coefficient of correlation is 0.86331087812 against C77U_dp.ps.in 
+The Pearson's coefficient of correlation is 0.789626806402 against C84A_U86A_dp.ps.in 
+The Pearson's coefficient of correlation is 0.178534483614 against C84A_U86G_dp.ps.in 
+The Pearson's coefficient of correlation is 0.325755987074 against C90A_A92G_dp.ps.in 
+The Pearson's coefficient of correlation is 0.924114111223 against C90A_dp.ps.in 
+The Pearson's coefficient of correlation is 0.967845589154 against C92G_dp.ps.in 
+The Pearson's coefficient of correlation is 0.998373387293 against U71C_dp.ps.in 
+The Pearson's coefficient of correlation is 0.782533831924 against U86G_dp.ps.in 

@@ -1,0 +1,33 @@
+Process Process-2:5:597:
+Traceback (most recent call last):
+File "/usr/lib/python2.6/multiprocessing/process.py", line 232, in bootstrap
+self.run()
+File "/usr/lib/python2.6/multiprocessing/process.py", line 88, in run
+self._target(*self._args, **self._kwargs)
+File "./script.py", line 214, in computeSeq
+seq_entry = getbpp(fname)
+File "./script.py", line 149, in getbpp
+f = open(fname+'dp.ps','r')
+IOError: [Errno 2] No such file or directory: '69-80_dp.ps'
+Traceback (most recent call last):
+File "./subopt.py", line 389, in <module>
+start_sampling(seq)
+File "./subopt.py", line 339, in start_sampling
+out = breakNumber(optimal, struct) ##returns list with cmp b > a, returns struct1(?), struct2(.), breaknumber
+File "./subopt.py", line 170, in breakNumber
+for i in range(len(struct)):
+TypeError: object of type 'NoneType' has no len()
+Traceback (most recent call last):
+File "./wrapper.py", line 409, in <module>
+initial()
+File "./wrapper.py", line 133, in initial
+getAvg()
+File "./wrapper.py", line 78, in getAvg
+x += P.getCorr('AGCGGGGGAGACAUCUAUCACAGCCUGUCUCGUGCCCGACCCCGC');
+File "/home/mcb/corrna/Server/Pearson.py", line 81, in getCorr
+correlation.compute()
+File "/home/mcb/corrna/Server/Pearson.py", line 50, in compute
+y = self.Y.bpp[i]
+IndexError: list index out of range
+[{"type":"R","seq":"AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC","corr":"1.0","mutation":"0","struct":".((((((((((((............))))))........))))))","MFE":"-15.80","boot":"---"},{"type":"R","seq":"AGCGGGGGAGACgUAUAUCAUAGCCUGUCUCaUGCCCGACCCCGC","corr":"0.920439888488","mutation":"2","struct":".((((((((((((............))))))........))))))","MFE":"-11.00","boot":"0.843156843157"},{"type":"R","seq":"AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC","corr":"0.894412451587","mutation":"1","struct":".(((((((((((((..........)))))))........))))))","MFE":"-19.30","boot":"0.6003996004"},{"type":"R","seq":"AGCGGGGGAGACAUgUAUCAUAGCCUGUCUCGUGCCaGACCCCGC","corr":"0.838396981093","mutation":"2","struct":"..(((((((((((.(........).))))))........))))).","MFE":"-7.60","boot":"0.760479041916"},{"type":"R","seq":"AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC","corr":"0.767405470825","mutation":"2","struct":".(((((((((((((((......)))))))))........))))))","MFE":"-11.00","boot":"0.662013958126"},{"type":"R","seq":"AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC","corr":"0.767405470825","mutation":"2","struct":".((((((((((((((........))))))))........))))))","MFE":"-11.00","boot":"0.661354581673"},{"type":"R","seq":"AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC","corr":"0.767405470825","mutation":"2","struct":".(((((((((((((((......)))))))))........))))))","MFE":"-25.20","boot":"0.660696517413"},{"type":"R","seq":"AGCGGGGGgGgCAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC","corr":"0.380711360738","mutation":"2","struct":".((((((.((((((....((.....))....))))))..))))))","MFE":"-22.90","boot":"0.119284294235"}]
+Time(s): 23.0765099525

@@ -1,0 +1,56 @@
+<div class="Intro">
+        <b> Cor-RNA: Predict and analyze deleterious mutations </b> <br> 
+        McGill Centre for Bioinformatics<br>
+	Montreal, Quebec, Canada <br>
+        <p>
+	<b>Description</b>: Mutations modifying the native structure of RNA molecules are said to be deleterious.
+Predicting these mutations is important because they can result in loss of the molecular function and to favor
+the apparition of various diseases [1]. CorRNA is a web server for predicting deleterious in RNA molecules.
+It uses the RNAmutants algorithm [2,3] to explore the RNA mutational landscape and implements two novel
+strategies to guide this search and improve the quality of the results. Once computed, CorRNA analyzes the
+predictions to evaluate the strength of the deleterious effect and estimate their statistical significance.	
+        </p>
+	
+	<p><b>Input</b>: The user inputs a RNA sequence and (optionally) selects the methodology to perform the prediction.
+	</p>
+
+	<p><b>Processing method</b>: 
+CorRNA works in two steps. First, CorRNA computes a sample set of candidate
+deleterious mutations, and then, it ranks the samples by the strength of their deleterious effect. CorRNA
+proposes two strategies to prune the RNA mutational landscape: A structural and a mutational heuristic. The
+first strategy favors alternate structures already present in the suboptimal structural ensemble of the input
+sequence. The second strategy performs successive runs of RNAmutants and progressively removes from
+the sample set, mutations with a low deleterious effect. The deleterious effect is estimated by correlating the
+base pairing probabilities of each sampled mutation sequence with the wild type, as described in [3]. Both
+strategies can be combined together, or, if one wants to estimate the effectiveness of these methods, simply
+omitted. Users can also choose between two algorithms to explore the mutational landscape. They can use
+either the original RNAmutants algorithm [2] or a novel method to compute multiple mutations preserving
+the G+C content of the wild sequence [3].<br>
+In the second step, all mutations (single and multiple) are ranked according to their deleterious effect and
+their statistical significance is estimated by a bootstrapping method. The latter compares the deleterious
+effect of the candidate mutations to a set of randomly generated mutations.
+	</p>
+
+
+	<p><b>Output</b>: 
+A table is displayed with the sequence mutation, mean free energy, optimal secondary structure,
+correlation coefficient of the structural ensemble, and statistical significance of the mutations. A web-link
+to the results is provided at the time of data submission which will report the status of the job. If the user
+provides an email address, this link and the results will also be sent by email.
+	</p>
+
+	References
+	<font size="2"><ol>
+	<li>1. M. Halvorsen, J. Martin, S. Broadaway, A. Laederach (2010) ``Disease-Associated Mutations That Alter the RNA
+Structural Ensemble’’. <i>PLoS Genetics</i>, 6(8).</li>
+	<li>
+2. J. Waldispühl, S. Devadas, B. Berger and P. Clote (2008), ``Efficient Algorithms for Probing the RNA Mutation
+Landscape’’, <i>PLoS Computational Biology</i>, 4(8):e1000124.</li>
+	<li>
+3. J. Waldispühl and Y. Ponty (2011), ``An unbiased adaptive sampling algorithm for the exploration of RNA
+mutational landscapes under evolutionary pressure’’. Accepted at the 15th Annual International Conference on
+Research in Computational Molecular Biology (RECOMB 2011) Vancouver. 2011.</li>
+	</ol></font>
+	
+</div>
+

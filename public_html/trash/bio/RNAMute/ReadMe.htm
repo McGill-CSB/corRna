@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+<title>RNAmute Readme</title>
+<link rel="stylesheet" type="text/css" href="gsview.css" title="GSview Style">
+</head>
+<body bgcolor="#99CCFF">
+<h1 align="center">
+RNAMute Package ReadMe
+</h1>
+<p>
+Version 1.0<br>
+&nbsp;</p>
+<h2>
+<a name="Table of contents"></a>
+Table of Contents
+</h2>
+<ul>
+<li><a href="#Overview">Overview</a>
+<li><a href="#Downloading">Downloading</a>
+<li><a href="#The package content">The Package Content</a>
+<li><a href="#Preparation &amp; Compilation">Preparation and Compilation</a>
+<li><a href="#Requirements">Requirements</a>
+<li><a href="#How to run the program">How to Run the Program</a>
+<li><a href="#The Results">The Results</a>
+<li><a href="#Having some problems?">Having some problems?</a>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>
+<a name="Overview"></a>
+Overview
+</h2>
+
+<p align="justify" style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+RNAMute is an application that provides a user friendly interface for analyzing the effects of point mutations on RNAs secondary structure.
+As with proteins, mutations in RNAs have the potential to alter their functionality 
+in important biological processes.
+When attempting to develop models for the prediction of conformational 
+rearranging 
+mutations in RNAs, useful structural information is available from folding 
+algorithms that predict the secondary structure of RNAs based on energy 
+minimization. 
+Detecting mutations with desirable structural effects among all possible point 
+mutations may then be valuable for the prediction of selective mutations that 
+can be tested experimentally. The mutation prediction method is independent of the folding algorithms but relies on 
+their success to predict the folding of small RNA structures. 
+For convenience in this work, we chose to use the Vienna RNA package for the prediction and comparison of RNA secondary 
+structures. The Vienna package already contains several utilities that are 
+related to this work and can be used as building blocks in our mutation predictions. </span></p>
+<h2 style="line-height: 150%">
+<a name="Downloading"></a>
+Downloading</h2>
+<p>
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+You can download the package from : <a href="http://www.cs.bgu.ac.il/~RNAMute">
+http://www.cs.bgu.ac.il/~RNAMute</a></span>
+</p>
+
+<a href="#Table of contents">UP</a>
+<p>
+&nbsp;</p>
+
+<h2>
+<a name="The package content"></a>
+The Package Content</h2>
+    <blockquote>
+    <p style="line-height: 150%" align="left">
+    <span style="font-size: 13.5pt; font-family: Times New Roman">
+
+1. mute_single - performs all possible 
+&quot;single point mutations&quot; in an RNA sequence. It predicts the secondary 
+structure of the wild type and mutants using Vienna's RNAfold, then calculates 
+several different representations and similarity measures between the wild type 
+and mutants, and finally produces a &quot;result&quot; file from the results obtained. 
+	<p style="line-height: 150%">
+
+2. RNAmute.java - the main routine. Creates a &quot;friendly&quot; interface for the user. Receives 
+as input&nbsp;a&nbsp;file with an RNA sequence, runs
+&quot;mute_single&quot;, and generates an HTML file 
+&quot;<span dir="LTR">RESULT_TABLE.html</span><span lang="HE"> </span>
+&quot; that contains all the processed&nbsp;data from the &quot;result&quot; file organized in 
+various tables. 
+	<p style="line-height: 150%">
+
+3. calcEig2 - calculates the second smallest eigenvalue of the
+Laplacian matrix for each single point mutation.<p style="line-height: 150%">
+
+4. b2Shapiro - converts the full structure from bracket notation to the weighted 
+coarse grained notation introduced by Bruce Shapiro. This routine uses a function 
+that is located in the Vienna package's &quot;lib&quot; directory. <p style="line-height: 150%">
+
+5. runRnaMute - similar to RNAmute, but enables the user to insert the RNA sequence 
+in a text area of the GUI instead of using a file. 
+	<p style="line-height: 150%">
+	
+
+&nbsp;<li> <b>Programs taken from the Vienna RNA package:<br><br></b>
+<p style="margin-top: 0; margin-bottom: 0">
+1. RNAfold - predicts minimum energy secondary structures and base pairing probabilities.<br><br>
+2. RNAdistance - calculates the distance between two RNA secondary structures
+represented as dot-bracket strings.<p style="margin-top: 0; margin-bottom: 0">
+<br></li></span>
+&nbsp;</blockquote>
+<p>&nbsp;<span style="font-size: 13.5pt; font-family: Times New Roman">
+The package also contains the source code for all its components. <br></span></p>
+<p style="line-height: 150%" align="left">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+While the program runs, a new directory&nbsp; called "htmlDir" will be created. 
+This directory contains all the HTML pages and all the drawings of the RNA 
+secondary structures&nbsp;that are 
+being calculated.<br>
+<br> </span></p>
+
+<a href="#Table of contents">UP</a>
+
+
+&nbsp;<h2>
+<a name="Preparation &amp; Compilation"></a>
+Preparation and Compilation
+</h2>
+<p align="justify" style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp; 
+RNAMute can run only on a Linux platform, so all preparations and compilations that will be 
+mentioned should be performed on a Linux platform with Java and &quot;GNU CC&quot; compiler 
+installed. RNAMute has all its components already compiled and may be used 
+without any compilations as described in the &quot;<b>How to Run the Program</b>&quot; 
+part, but it has some components written in C that in some architectures may 
+not work. In such a case, the Vienna RNA package should be downloaded from the web 
+at <a href="http://www.tbi.univie.ac.at/~ivo/RNA/">http://www.tbi.univie.ac.at/~ivo/RNA/</a>
+and directory &quot;ViennaRNA-1.4\lib&quot; should be compiled by running the command 
+&quot;make&quot; in this directory. All files from the directory &quot;RNAMute\RNAMute_progs&quot; 
+should be copied to &quot;ViennaRNA-1.4\Progs&quot; and compiled with &quot;makefile&quot;. 
+&quot;Makefile&quot; that appears in the &quot;ViennaRNA-1.4\Progs&quot; directory should be overwritten. After the 
+compilation finishes, files: &quot;b2Shapiro&quot;, &quot;calcEig2&quot;, &quot;RNAdistance&quot;, &quot;RNAfold&quot; 
+and &quot;mute_single&quot; should be copied from
+&quot;ViennaRNA-1.4\Progs&quot; directory to the &quot;RNAMute\bin&quot; 
+directory. All files that are already in it should be overwritten. Make sure that 
+all files in the &quot;RNAMute\bin&quot; directory are in 
+an executable mode. If not, change their mode by typing the command:&nbsp; &gt;chmod 700 
+file_name ,when file_name is each file&nbsp; from the list above. At this point, the 
+RNAMute package can be used as described in the &quot;<b>How to Run the Program</b>&quot; 
+part. &nbsp;<span dir="RTL">&nbsp;</span></span> <br>
+
+</p>
+
+<p style="line-height: 150%">
+<a href="#Table of contents">UP</a>
+
+&nbsp;</p>
+
+<h2>
+<a name="Requirements"></a>
+Requirements</h2>
+
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+This program can run on a Linux platform only. For using this program,&nbsp; one needs to have &quot;Java 
+VM&quot; and &quot;GNU CC&quot; compiler installed on the computer.</spam></p>
+
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+For more information about downloading and installing &nbsp;Java&nbsp; <a href="http://java.sun.com/" target="_blank">click here</a>.<br>
+1. Please make sure that the directory that contains the program (e.g. ~/RNAMute)
+   and all subdirectories have the correct Read/Write permissions for all users working with this program. <br>
+2. RNAMute writes some necessary and temporary files while running.
+Thus, please make sure that you have enough &nbsp;memory for placing those files. It is 
+recommended that you will have approximately 10.0 free MB for processing sequences 
+that are about 100 nt long.</span></p>
+
+<p>
+<br>
+</span>
+<span style="font-family: Times New Roman">
+<a href="#Table of contents">UP</a>
+
+</span>
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+
+&nbsp;<p>
+
+
+<h2>
+<a name="How to run the program"></a>
+How to Run the Program</h2>
+
+
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+Before running the program make sure that all the <a href="#Preparation &amp; Compilation">
+preparations</a> are done.<br>Open a Unix shell, and go to the directory that holds the 
+program (e.g. ~/RNAMute).<br> The RNAMute program can be executed in two ways:<br>
+1. With Graphical User Interface (GUI) : 
+<ul><li>type the command:<br> 
+>java -jar runRnaMute.jar</li></ul>
+ </span></p>
+
+
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">&nbsp;&nbsp; The GUI that appears 
+after running the command looks like this:<p style="line-height: 150%">
+<IMG border="0" src=pic/RNAmute_input_screen.jpg width="500" height="300"></span></p>
+
+
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+At this point, an RNA sequence may be inserted into the text box of the GUI. 
+<br>
+<ul><li> The &quot;Reset&quot; button 
+removes the sequence from the text area.</li> 
+<li>To start a calculation the &quot;Start&quot; button 
+should be pressed. </li>
+<li>During the calculation the &quot;Start&quot; button remains pressed and after the calculation stops, 
+the &quot;Start&quot; button releases&nbsp;(please be patient as it may 
+take a few seconds to generate the results).</li>
+<li>Results may be observed by pressing the &quot;Result&quot; button.</li> 
+If the file could not be opened by pressing the &quot;Result&quot; button, open the file &quot;RESULT_TABLE.html&quot;, which is located in the 
+same directory (e.g.~/RNAMute).</li></ul></span></p>
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+2. Without Graphical User Interface (GUI) :</br>
+<ul><li>Type your sequence in a  file (e.g., my_seq).</li>
+<li>Save this file in the same directory where the program resides (e.g. ~/RNAMute)</li>
+<li>From this directory, run the program &quot;RNAmute&quot;, with the sequence file as an argument. Use this command:<br>
+ &gt; java&nbsp;&nbsp; -jar RNAmute.jar &nbsp; my_seq</li>
+<li>Wait until the application terminates (it may take a few seconds).</li>
+<li>A new file &quot;RESULT_TABLE.html&quot; will appear in the current 
+directory (e.g.&nbsp; ~/RNAMute). To examine the output, open the file and follow 
+its links. </li></ul></span></p>
+
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+<b>
+<a name ="The Results"></a><u>Examination of the Results</u></b></span></p>
+
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+The result file arranges&nbsp;the data of all point mutations in a 
+convenient way. You can click the links in the table's cells to get&nbsp; 
+more information about each mutation.</span></p>
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+The easiest way to understand how to use the result file is to look at an 
+<a href= "examples/ex_main_page.html" target=_blank>example</a>.</span></p>
+</span>
+<span style="font-family: Times New Roman">
+<p style="line-height: 150%">
+<a href="#Table of contents">UP</a></p>
+</span>
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+<p>
+<h2>
+<a name="Having some problems?"></a>
+Having some problems?
+</h2>
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+First of all, make sure that all the <a href="#Preparation &amp; Compilation">preparations</a> were performed and all the 
+<a href="#Requirements">requirements</a>&nbsp;have been fulfilled.
+</span></p>
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+If one of the single point mutations results in a
+completely linear structure (i.e., a single strand with no base
+pairing), the "Dot-bracket table" may not be generated and an
+exception error may appear. In such a case, inspect the "Eigenvalue table"
+and verify that indeed one of the mutations is causing a single strand.
+</span></p>
+<p style="line-height: 150%">
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+If you have some problems running the program with the Graphical Interface, try to run it 
+without. For instructions go to <a href="#How to run the program">&quot;How to run the Program&quot;</a>. 
+</span>
+<span style="font-family: Times New Roman">
+<p style="line-height: 150%">
+<a href="#Table of contents">UP</a></p>
+
+</span>
+<span style="font-size: 13.5pt; font-family: Times New Roman">
+
+<h2>
+End of ReadMe
+</h2>
+</body>
+</html>

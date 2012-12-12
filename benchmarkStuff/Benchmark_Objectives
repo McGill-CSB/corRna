@@ -1,0 +1,46 @@
+
+November 30, 2010
+BENCHMARK TRIALS FOR RNAMUTANTS
+
+The benchmark is used to test how fast our solution works, and how good it is.
+This is basically what Jerome wants for us to include in the proposal for the
+Nucleic Acids Journal. So this is high priority...
+
+We will be comparing our program with RNAMute:
+http://www.cs.bgu.ac.il/~RNAMute/
+
+PART I: CORRELATION BENCHMARK
+Run simulations with these parameters:
+	5 mutation sizes: 1, 2, 3, 4, 5
+	2 sequences:
+		HCV Wildtype:	AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGACCCCGC
+		HIV1 TAR Wildtype:	GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC
+	10 repeated runs per condition (to account for variance)
+	2 programs: RNAmutants (ours) and RNAMute
+
+So we have 5*2*10 = 100 runs for RNAmutants, and 100 runs for RNAMute
+	
+Record time and average correlation.
+Average correlation = average of the output sequence correlations.
+Keep min/max time and correlation of the 10 trials in each condition
+
+Graph min/max for time and correlation.
+
+
+
+
+PART II: SCALING BENCHMARK
+Run simulations with these parameters:
+	5 mutation sizes: 1, 2, 3, 4, 5
+	5 sequence sizes: 20, 40, 60, 80, 100. Sequence to use: UGCCUGCCUCUUGGGAGGGG (double for 40, triple for 60, etc)
+	10 trials per condition, (account for variance)
+	2 programs: RNAmutants (ours) and RNAMute
+
+So we have to do 5*5*10 = 250 runs of RNAmutants, and 250 runs of RNAMute
+
+Record time and average correlation 
+Keep min/max time and correlation of the 10 trials in each condition
+Graph min/max for time and correlation.
+
+
+

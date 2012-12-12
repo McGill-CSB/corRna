@@ -1,0 +1,293 @@
+#! /usr/bin/env python
+import sys
+import re
+import commands
+import shutil
+import getopt
+import os, glob, sys
+import os.path
+import random, math
+from multiprocessing import Process, Manager, Array, Value
+from decimal import Decimal
+from time import clock, time
+### note ### we are assumming the squence length of typeA and typeB are the same!
+
+DEBUG = True
+RANDOM = random.randint(1,100)
+DUMMY = 0
+start = time()
+
+class basePairProbability:
+	#constructor
+	def __init__(self, sequence, entry):
+		self.entries = []
+		self.bpp = []
+		self.seq = sequence
+		self.sequenceSize = 0	
+		self.box = entry
+
+	def parse(self):
+		self.sequenceSize = len(self.seq) -1
+		##initialize bpp
+		for i in range(self.sequenceSize):
+			self.bpp.append(float(0))
+		for line in self.box:
+			data = re.split('\s+', line)
+			entry = []
+			if data[0] == '':
+				break 
+			entry.append(int(data[0]))
+			entry.append(int(data[1]))
+			entry.append(float(data[2]))
+			self.entries.append(entry)
+			self.bpp[entry[0]-1]+=entry[2]
+			self.bpp[entry[1]-1]+=entry[2]
+class pearson: 
+	#onstructor 
+	def __init__(self, typeA, typeB):
+		self.X = typeA
+		self.Y = typeB
+		self.r = 0
+	def compute(self):
+		sum_x = 0
+		sum_y = 0
+		sum_XX = 0
+		sum_YY = 0
+		sum_XY = 0
+		for i in range(len(self.X.bpp)):
+			x = self.X.bpp[i]
+			sum_x+=x		
+			y = self.Y.bpp[i]
+			sum_y+=y
+		p = sum_x/(len(self.X.bpp))		#mean of x
+		q = sum_y/(len(self.Y.bpp))		#mean of y
+
+		for i in range(len(self.X.bpp)):
+			x = self.X.bpp[i] - p
+			y = self.Y.bpp[i] - q	
+			XX = pow(x,2)
+			YY = pow(y,2)
+			sum_XX+=XX
+			sum_YY+=YY
+			sum_XY+=(x*y)
+		self.r = sum_XY / (sqrt(sum_XX*sum_YY))  ##pearson's coefficient correlation
+##end of class correlation
+class sampling:
+	def __init__(self, sequence, SETR, SETF):
+		self.wild = sequence
+		self.setR = SETR
+		self.setF = SETF
+		#collect wild type bpp
+		self.wild_entry = []
+		fname = self.RNAfold(self.wild)
+		self.wild_entry = self.getbpp(fname)
+		self.wild_bpp = basePairProbability(self.wild, self.wild_entry)
+		self.overall = []
+	def compute(self):	
+		if(DEBUG):
+			print "start grabbing corr"
+		proc = []
+		for seq in self.setR:
+			p=Process(target=split, args=(seq,'R'))
+			p.start()
+			proc.append(p)
+		for seq in self.setF:
+			p=Process(target=split, args=(seq,'F'))
+			p.start()
+			proc.append(p)
+		for p in proc:
+			p.join()
+		if(DEBUG):
+			print "finish grabbing corr"
+	def split(self, seq, st):
+		entry = []	
+		if(re.search('F',st)):
+			sequence = seq[0]
+		else:
+			sequence = seq
+		fname = self.RNAfold(sequence)
+		seq_entry = self.getbpp(fname)
+		seq_bpp = basePairProbability(sequence, seq_entry)
+		seq_bpp.parse()
+		correlation = pearson(self.wild_bpp, seq_bpp)
+		correlation.compute()	
+		corr = correlation.r
+		entry.append(st)
+		entry.append(sequence)
+		entry.append(corr)
+		if(re.search('F',st)):
+			entry.append(seq[1])
+		self.overall.append(entry)
+		print entry
+		####
+	def getbpp(self, fname):
+		f = open(fname+'_ss.ps')
+		entry = []
+		for line in f:
+			if(re.search('ubox',line)):
+				if(re.search('sqrt', line) or re.search('ubox',line)):
+					DUMMY = 1
+			else:
+				entry.append(line)
+		commands.getoutput('rm '+fname+'*.ps')
+		return entry
+	#computes RNAfold
+	def RNAfold(self, seq):
+		rant = random.randint(1,1000)
+		fname = str(rant)+'-'+str(RANDOM)
+		f = open(fname+'.tmp','w')
+		f.write('> '+fname+'\n')
+		f.write(seq)
+		f.close()
+		out = commands.getoutput('cat '+fname+'.tmp @- | RNAfold -p -d0')		
+		commands.getoutput('rm '+fname+'.tmp')
+		return fname
+	#computes fixedCGSampling 
+#end of class sampling
+class bootstrap:
+	def __init__(self,wildtype, seq_set):
+		self.wild = wildtype
+		self.seq = seq_set	
+		return
+	def bootstrap(self):
+		for seq in seq_set:
+			##found 0 mutations
+			if(re.search('F',seq[0])):
+				if(seq[3]==0):
+					continue
+	def sequenceGenerator(wildtype, n):
+		kSequence = []	
+		for i in range(1000):	
+			kSequence.append(sequenceRandomizer(wildtype, n))
+		return kSequence
+			
+class collect_Sequence:
+	def __init__(self, sequence):
+		self.seq = sequence
+		RNA_d = Array('d',[],lock=False)
+		fixedCG_d = Array('d',[],lock=False)
+		rnamut =Process(target=self.RNAmutants, args=(self.seq,RNA_d,))
+		fixedCG = Process(target=self.fixedGC, args=(self.seq,fixedCG_d))
+		rnamut.start()
+		fixedCG.start()
+		fixedCG.join()
+		rnamut.join()
+		if(DEBUG):
+			print str(time()-start)+" Completed: Collecting Seq"
+		print RNA_d
+		print fixedCG_d
+		self.RNA_entry = RNA_d
+		self.fixedCG_entry = fixedCG_d
+	def GCcontent(self,sequence):
+		gc=0;
+		l = 0;
+		s = re.compile("C|G|c|g")
+		for c in sequence:
+			l+=1
+			if(s.match(c)):
+				gc+=1
+		return (Decimal(str(gc)) / Decimal(str(l))).quantize(Decimal("0.0001"))
+	## retrives the base pair probability
+	def fixedGC(self,seq,fixedCG_d):
+		gc = self.GCcontent(seq)
+		out = commands.getoutput('./fixedCGSampling.py '+seq+' -n 10 -g '+str(gc)+' -e 0.05')
+		##parse the data out
+		flag = 0
+		num = ''
+		pair = []
+		tmp = ''
+		for line in out.splitlines():
+			if(re.search('Sampled',line)):
+				tmp = line
+				line = re.sub('^>\s+\w+\s+',"",line)
+				line = re.sub('\s+.*$',"",line)
+				if(int(line) == 0):
+					flag = 0
+				else:
+					num = re.sub('^>\s+\w+\s+\d+\s+.*(?=\d)',"",tmp)
+					num = re.sub('\s.*$',"",num)
+					flag = 1 
+					continue
+			if(flag == 1):
+				if(re.search('\w+\s+',line)):
+					line = re.sub('\-?\d+\.?\d+',"",line)
+					line = re.sub('^\s+',"",line)
+					line = re.sub('\\t',"",line)
+					pair.append(line.upper())
+					pair.append(num)
+					fixedCG_d.append(pair)
+					pair = []	
+		print fixedCG_d
+	#comptes RNAmutants
+	def RNAmutants(self,seq,RNA_d):
+		out = commands.getoutput('./RNAmutants -l lib -m 5 -s '+seq)	
+		flag = 0
+		for line in out.splitlines():
+			if(re.search('superoptimal',line)):
+				flag = 1
+				continue
+			if(flag == 1):
+				line = re.sub('\s+\(\-?\d+\.?\d+\)',"",line)
+				RNA_d.append(line.upper())	
+				flag = 0
+		print RNA_d
+###end of class collect_sequence
+#get RANDOM variable for session
+def setRandom():
+	RANDOM = random.randint(1,100)
+	return
+def start_sampling(sequence):
+	start = time()
+	if(DEBUG):
+		print "Begin collect sequence"
+	seq = collect_Sequence(sequence)
+	if(DEBUG):
+		print "Begin sampling"
+	smp = sampling(sequence, seq.RNA_entry, seq.fixedCG_entry)
+	if(DEBUG):
+		print "Completed sampling"
+	print smp.overall
+	end = time() - start
+	print "Time(s): "+str(end)
+
+def usage():
+	print "-s [sequence]"
+	print "-b BOOTSTRAP OPTION"
+	print "-c USES RNAmutant && fixedCGSampling to find correlations"
+	print "sample"
+	print "./generate.pl -b -c -s AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC"
+	print "Wuff --- Wuff"
+def main():
+	## collect input
+	try: 
+		optlist, args = getopt.getopt(sys.argv[1:], 'chbs:', ["help"])
+	except getopt.GetoptError, err:
+		print str(err)
+		print usage()
+		sys.ext(2)
+	seq = ''
+	BOOTSTAP = 0
+	COMPARE = 0
+	for opt, query in optlist:
+		if opt == "-s":
+			seq = query
+		elif opt in ("-h", "--help"):
+			usage()
+			sys.exit
+		elif opt == "-b":
+			BOOTSTRAP = 1
+		elif opt == "-c":
+			COMPARE = 1
+		else:
+			print "ERROR: incorrect usage"
+			usage()
+			sys.exit
+	##start of program
+
+	if(re.match('\w+',seq)):
+		start_sampling(seq)
+	else: 
+		print "ERROR: Buggy sequence"
+		sys.exit
+##end of main
+main()	

@@ -1,0 +1,114 @@
+Running benchmark script for HCV sequence
+Running AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGACCCCGC with 1 mutation
+time, correlation, #sequences
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGACCCCGC with 2 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGACCCCGC with 3 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGACCCCGC with 4 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running AGCGGGGGAGACAUAUAUCACAGCCUGUCUCGUGCCCGACCCCGC with 5 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running benchmark script for TAR sequence
+Running GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC with 1 mutation
+time, correlation, #sequences
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC with 2 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC with 3 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC with 4 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done
+Running GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC with 5 mutations
+run 1 done
+run 2 done
+run 3 done
+run 4 done
+run 5 done
+run 6 done
+run 7 done
+run 8 done
+run 9 done
+run 10 done

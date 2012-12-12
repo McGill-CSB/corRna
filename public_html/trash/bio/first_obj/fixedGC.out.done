@@ -1,0 +1,248 @@
+  B[0]=28	[0.61-0.61]	1.0.2f->0.61 
+  B[1]=30	[0.67-0.67]	1.0.2f->0.67 
+  B[2]=20	[0.67-0.67]	1.0.2f->0.67 
+  B[3]=14	[0.68-0.68]	1.0.2f->0.68 
+  B[4]=13	[0.71-0.71]	1.0.2f->0.71 
+  B[5]=13	[0.71-0.71]	1.0.2f->0.71 
+> Sampled 28 sequence(s) and secondary structure(s) with 0 mutations
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-0.1
+  ...........(((....)))
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-2.2
+  ((...((((......))))))
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-2.2
+  ((...((((......))))))
+  GAUCUGAGCCUGGGAGCUCUC	-0.6
+  ......(((......)))...
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-2.2
+  ((...((((......))))))
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	1.8
+  .....(((.((...))..)))
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+  GAUCUGAGCCUGGGAGCUCUC	-3.5
+  .....((((......))))..
+> Sampled 30 sequence(s) and secondary structure(s) with 1 mutations
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-6.1
+  ((...(((((....)))))))
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-4.8
+  (....(((((....))))).)
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-6.1
+  ((...(((((....)))))))
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-6.1
+  ((...(((((....)))))))
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGAGCUCgC	-4.4
+  ....(((((......))))).
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGCCUGGGgGCUCUC	-6.1
+  ((...(((((....)))))))
+  GAUCUGAGCCUGGGgGCUCUC	-6.1
+  ((...(((((....)))))))
+  GAUCUGAGCCUGGGgGCUCUC	-5.4
+  .....((((......))))..
+  GAUCUGAGCCUGGGgGCUCUC	-6.1
+  ((...(((((....)))))))
+  GAUCUGAGCCUGGGgGCUCUC	-6.1
+  ((...(((((....)))))))
+> Sampled 20 sequence(s) and secondary structure(s) with 2 mutations
+  GAUCaGAGCCUGGGgGCUCUC	-9.0
+  ....((((((....)))))).
+  GAUCUGAGCCUGGGgGCUCaC	-9.0
+  ....((((((....)))))).
+  GuUCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCgGAGCCUGGGAGCUCUg	-7.0
+  ...((((((......))))))
+  GAUggGAGCCUGGGAGCUCUC	-7.1
+  ...((((((......))))))
+  GAUCUGAGCCUGGagGCUCUC	-7.3
+  .....(((((....)))))..
+  GAUCUGAGCgUGGGAGCgCUC	-5.1
+  ......(((((....))))).
+  GAUCUGAGCCUGGGAGggCUC	-8.5
+  .....((((((....))))))
+  GAUCUGAGCCUGGGgGCUCaC	-9.0
+  ....((((((....)))))).
+  GAUCUGAGCCUGGGgGCUCaC	-7.4
+  .....(((((....)))))..
+  GAUCUGAGaCUGGGAGgUCUC	-6.4
+  .....((((((....))))))
+  GAUCUGAGCCUuGGAGCgCUC	-7.4
+  .....(((((.....).))))
+  GAUCUGAGCgUGGGAGCgCUC	-8.0
+  .....((((((....))))))
+  GAUCUGAGCCUGcGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAaCUGAGCCUGGGgGCUCUC	-7.4
+  .....(((((....)))))..
+  GAUCgGAGCgUGGGAGCUCUC	-6.3
+  ....(((((......))))).
+  GAUCaGAGCCUGGGgGCUCUC	-9.0
+  ....((((((....)))))).
+  GAUCUGAGCCUGGGgGCUCUg	-7.0
+  ...(.(((((....))))).)
+  GAUCUGAGCCUGGGgGCUCaC	-7.0
+  ....(((((......))))).
+  GAUgaGAGCCUGGGAGCUCUC	-5.1
+  ....(((((......))))).
+> Sampled 14 sequence(s) and secondary structure(s) with 3 mutations
+  GAUuaGAGCCUGGGgGCUCUC	-9.0
+  ....((((((....)))))).
+  GcUCUGAGCCaGGGAGCaCUC	-4.4
+  (((((.......)))))....
+  GAUgUGAGCCUGGGgGCUCaC	-11.7
+  ...(((((((....)))))))
+  GAUCaGAGCCUGcGAGCUCUg	-7.7
+  ...((((((......))))))
+  GAUCUGAGCCUGGGgGCUCag	-11.6
+  ...(((((((....)))))))
+  GAUgaGAGCCUGGGgGCUCUC	-11.9
+  ...(((((((....)))))))
+  GAUCUGAGCCUGaGAGggCUC	-11.0
+  .....((((((....))))))
+  GAUCUGAGCCUucGgGCUCUC	-10.4
+  .....(((((....)))))..
+  GAUCaGAGCCUGGGgGCUCUg	-11.6
+  ...(((((((....)))))))
+  GAUCUGAGaCcGGGAGgUCUC	-10.5
+  .....((((((....))))))
+  GAUCUGcGCCUGGcAGaUCUC	-9.5
+  (((((((.....)))))))..
+  GAUgUGAGCCUGGGgGCUCaC	-11.7
+  ...(((((((....)))))))
+  GAUCUGAGCCUGGGgGCUCag	-11.6
+  ...(((((((....)))))))
+  GAUgaGAGCCUGGGgGCUCUC	-11.9
+  ...(((((((....)))))))
+> Sampled 13 sequence(s) and secondary structure(s) with 4 mutations
+  GAUCUGAGCCcGuGAGggCUC	-14.1
+  .....((((((....))))))
+  GAUCUGcuCCUGGGAGCgaUC	-9.7
+  ((((.((((....))))))))
+  GAUCgGAGCCUGuGgGCUCUg	-10.9
+  ...(((((((....)))))))
+  GAUCUGAGCCcGGaAGggCUC	-14.1
+  .....((((((....))))))
+  GcUCccAuCCUGGGAGCUCUC	-10.4
+  (((((((...)))))))....
+  GAUCUGAGCCcGGaAGggCUC	-14.1
+  .....((((((....))))))
+  GAUCccAGCCUGGGguCUCUC	-7.8
+  (((((((...)))))))....
+  GAgCUccGaCUGGGAGCUCUC	-11.7
+  (((((((.....)))))))..
+  GAUCUGAGCCcGGaAGggCUC	-14.1
+  .....((((((....))))))
+  GAUaUGAGCCcGGGAGggCUC	-12.6
+  .....((((((....))))))
+  aAUCUGAGCCcGGGAGggCUC	-12.6
+  .....((((((....))))))
+  GAUCUGAGCCcGuGAGggCUC	-14.1
+  .....((((((....))))))
+  GAgCUccGCuUGGGAGCUCUC	-11.7
+  (((((((.....)))))))..
+> Sampled 13 sequence(s) and secondary structure(s) with 5 mutations
+  GAaCUGAGCCcGGaAGggCUC	-14.1
+  .....((((((....))))))
+  GAUCUGAGCCUacGgGCUCgg	-13.4
+  ...(((((((....)))))))
+  uAUaUGAGCCcGGGAGggCUC	-12.6
+  .....((((((....))))))
+  GAUgaGAGCCUucGgGCUCUC	-14.9
+  ...(((((((....)))))))
+  GAUCUGAGCCUacGgGCUCag	-14.1
+  ...(((((((....)))))))
+  GAUCUGAGCCUacGgGCUCgg	-13.4
+  ...(((((((....)))))))
+  uAUCUGAGCgcGcGAGCgCUC	-12.8
+  .....((((((....))))))
+  uAUCUGAGCCcGuGAGggCUC	-14.1
+  .....((((((....))))))
+  aAUCaGAGCCcGGGgGCUCUg	-12.7
+  ...(((((((....)))))))
+  GAUgUGAGCCUucGgGCUCgC	-14.3
+  ...(((((((....)))))))
+  GAUgUGAGCCcGuGAGggCUC	-14.1
+  .....((((((....))))))
+  GAUgUGAGCCUucGgGCUCgC	-14.3
+  ...(((((((....)))))))
+  GAUgUGAGCCUucGgGCUCaC	-14.7
+  ...(((((((....)))))))

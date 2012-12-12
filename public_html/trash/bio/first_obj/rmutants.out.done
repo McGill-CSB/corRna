@@ -1,0 +1,25 @@
+0 3.73004169401074e+02
+1 2.39040312454775e+05
+2 2.29619795808165e+07
+3 3.35202454435403e+09
+4 1.36364470140092e+11
+5 2.39863887506686e+12
+>> Superoptimal structure(s):
+> 0-superoptimal structure
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+> 1-superoptimal structure
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+> 2-superoptimal structure
+GAUCUGAGCCUGGGgGCUCaC	(-9.00)
+....((((((....)))))).
+> 3-superoptimal structure
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+> 4-superoptimal structure
+GAUCUGAGCCcGGaAGggCUC	(-14.10)
+.....((((((....))))))
+> 5-superoptimal structure
+GAUggGAGCCcGGGgGCUCcC	(-15.10)
+...(((((((....)))))))

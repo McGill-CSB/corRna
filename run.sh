@@ -1,0 +1,112 @@
+#!/bin/bash
+echo "Running Benchmark script"
+
+echo "RF00184"
+./eddy.sh CCAUAACUACGUCUACAUAACCGACGCCUACCCCAGUUUCAUAGUAUUUUCUGG
+cp b-results.txt ./Feb13/RF00184.txt
+
+echo "RF01322"
+./eddy.sh GUAGCACCCGGCCGCGAGGCCGGGUGAGGAUUGAAAC
+cp b-results.txt ./Feb13/RF01322.txt
+
+echo "RF01327"
+./eddy.sh AUUUACAUACCACUUAGUUAAUAUAAAAC
+cp b-results.txt ./Feb13/RF01327.txt
+
+echo "RF01326"
+./eddy.sh AUUAAAAUAAGACCGUUUCGGAAUGGAAAC
+cp b-results.txt ./Feb13/RF01326.txt
+
+echo "RF01338"
+./eddy.sh CUUUCAAUUCCUUUUGGGAUUAAUC
+cp b-results.txt ./Feb13/RF01338.txt
+
+echo "RF01330"
+./eddy.sh GUAUUCCGGGGCCAUGAUGCCCCGGCCUCAUUGAAGC
+cp b-results.txt ./Feb13/RF01330.txt
+
+echo "RF01342"
+./eddy.sh AUUUCAAUCAACGCCCCGAGGAAGAGGGGAUUAAAAC
+cp b-results.txt ./Feb13/RF01342.txt
+
+echo "RF01381"
+./eddy.sh UGACUAGCGGUAGGCUAGAAGGAG
+cp b-results.txt ./Feb13/RF01381.txt
+
+echo "RF01358"
+./eddy.sh AUUUCCAUCCUCCAAGAGGUCUUAUUUUAAU
+cp b-results.txt ./Feb13/RF01358.txt
+
+echo "RF01359"
+./eddy.sh AUUCAAAUAACCAAAAUCCUCGGAAGGGGAUUAAAACG
+cp b-results.txt ./Feb13/RF01359.txt
+
+echo "RF01352"
+./eddy.sh CUUUCUAUUCCACUACGUUCAGAUAAAAC
+cp b-results.txt ./Feb13/RF01352.txt
+
+echo "RF01353"
+./eddy.sh CUUCCAUACUAUCUAGUAAUUCUUAAAC
+cp b-results.txt ./Feb13/RF01353.txt
+
+echo "RF01354"
+./eddy.sh CUUUCAAUCCUCUUUUUGAGAUUC
+cp b-results.txt ./Feb13/RF01354.txt
+
+echo "RF01356"
+./eddy.sh GGCAAAGCCCGCCUGCGCGGGCUA
+cp b-results.txt ./Feb13/RF01356.txt
+
+echo "RF01357"
+./eddy.sh GUUUCAAUCCUCUACGAGGCUAACGAGGUUUGCAACC
+cp b-results.txt ./Feb13/RF01357.txt
+
+echo "RF01317"
+./eddy.sh CUUCACUGCCGUAUAGGCAGCCACAAAU
+cp b-results.txt ./Feb13/RF01317.txt
+
+echo "RF00469"
+./eddy.sh UGGUGCCUACUCCUGCUUUCUGUAGGGGUAGGCAUCU
+cp b-results.txt ./Feb13/RF00469.txt
+
+echo "RF01369"
+./eddy.sh GUCGAGACGGACUGAAAACCCAGAACGGGAUUGAAAC
+cp b-results.txt ./Feb13/RF01369.txt
+
+echo "RF01368"
+./eddy.sh CCAAUAAUCCCUCAUCUAAAAAUCCAACCACUGAAAC
+cp b-results.txt ./Feb13/RF01368.txt
+
+echo "RF01374"
+./eddy.sh CUAACAGUAGUUUACCAAAUAAUUUAGCGACUGAAAC
+cp b-results.txt ./Feb13/RF01374.txt
+
+echo "RF01380"
+./eddy.sh GGCGACUGGUGAGUACGCC
+cp b-results.txt ./Feb13/RF01380.txt
+
+echo "RF00037"
+./eddy.sh GUUCCUGCUUCAACAGUGUUUGGAUGGAAC
+cp b-results.txt ./Feb13/RF00037.txt
+
+echo "RF00032"
+./eddy.sh ACAACGGCUCUUUUUAGAGCCACCAA
+cp b-results.txt ./Feb13/RF00032.txt
+
+echo "RF00847"
+./eddy.sh AGGUGAGUUAGAUCUCAUAUCCUUCCGCAAAAUGGAAAUGAUAUGUAAUCUAGCUUACAG
+cp b-results.txt ./Feb13/RF00847.txt
+
+echo "RF01328"
+./eddy.sh CUUUCUAAUCCCUCUUGGGAUUUUC
+cp b-results.txt ./Feb13/RF01328.txt
+
+echo "HCV"
+./eddy.sh AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC
+cp b-results.txt ./Feb13/HCV.txt
+
+echo "TAR"
+./eddy.sh GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC
+cp b-results.txt ./Feb13/TAR.txt
+
+echo "done!"

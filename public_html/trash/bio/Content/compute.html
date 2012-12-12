@@ -1,0 +1,36 @@
+<div class="form">
+	<form name='form' id='form' onSubmit='return isValid()'>
+		<textarea name='sequence' id='sequence' cols='60' rows='5' onBlur='validate_seq();' onFocus='remove_str()'>Enter sequence and/or constrains here</textarea><span class="error"id='wseq'></span><br>
+		Email: (optional) <br><input type='text' id='email' / ><span class="error" id='wemail'></span><br>
+		<div class="search color"> <label>Constraint Methods:</label><br>
+			<input type="radio" id="No_Constraint" name="search" value="none" onClick='methology(this.value);' checked='yes'/>No Constraints&nbsp;
+			<input type="radio" id="Structure_Heuristic" name="search" value="structure" onClick='methology(this.value);'/>Structure Heuristic&nbsp;
+			<input type="radio" id="Mutation_Heuristic" name="search" value="mutation" onClick='methology(this.value);'/>Mutation Heuristic &nbsp;
+		</div>
+		<div class="methology color">
+			<label>Computation Method:</label><br>
+			<input type='radio' name='option' id='RNAmutant' value='RNAmutant' onClick='procedure(this.value);' checked='yes'/>RNAmutant&nbsp;
+			<span class="methology_active">
+			<input type='radio' name='option' id='fixedCGSampling' value='fixedCGSampling' onClick='procedure(this.value);'/>fixedCGSampling&nbsp;
+			<input type='radio' name='option' id='RNAfixed' value='RNAfixed' onClick='procedure(this.value);'/>RNAmutant & fixedCGSampling&nbsp;
+			<div class='extra_settings'>
+				e: <input type='text' id='e' onBlur='validate_e();'/>&nbsp;<span class="error"  id='we'></span>
+			</div>
+			</span>
+		</div>
+		<div class="color">
+		Output top <input type='text' id='top' size='2' value='10' onBlur='validate_top();'/> mutations 
+		with a mutation depth of <input type='text' id='mDepth' size='2' value='2' onBlur='validate_mDepth;'/><br>
+		<span class="error" id='wtop'></span><span class="error"id='wmDepth'></span>
+		<span class="Structural"><input type='checkbox' id='bootstrap' value='bootstrap' />Measure Significants of Deleterious Structure<br></span>
+		<span class="Mutational" style="display:none">For <input type='text' id='cycle' size='2' value='10' onBlur='validate_top();'/> Cycles<br> With a marker for mutations under a threshold of <input type='text' size='2' value='' id='threshold'/>(optional)</span>
+		</div>
+		<div class ="correlation color Structural"> <label>RNAfold dangling end energies:</label><br>
+			<input type="radio" id="d0" name="constraints" value="d0" checked="yes"/> d0&nbsp;
+			<input type="radio" id="d1" name="constraints" vakue="d1" /> d1&nbsp;
+			<input type="radio" id="d2" name="constraints" vakue="d2" /> d2&nbsp;
+			<input type="radio" id="d3" name="constraints" vakue="d3" /> d3&nbsp;
+		</div>
+		<div id='submitButton' class='submitButton'><input type='submit' value='Submit'></div>
+	</form>
+</div>

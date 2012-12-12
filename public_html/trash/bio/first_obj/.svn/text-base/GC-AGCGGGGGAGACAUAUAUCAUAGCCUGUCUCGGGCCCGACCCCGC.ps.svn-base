@@ -1,0 +1,242 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: RNA Dot Plot
+%%Creator: PS_dot.c,v 1.38 2007/02/02 15:18:13 ivo Exp $, ViennaRNA-1.8.4
+%%CreationDate: Tue Nov  2 16:31:27 2010
+%%BoundingBox: 66 211 518 662
+%%DocumentFonts: Helvetica
+%%Pages: 1
+%%EndComments
+
+%Options: -d0 
+% 
+%This file contains the square roots of the base pair probabilities in the form
+% i  j  sqrt(p(i,j)) ubox
+
+%%BeginProlog
+/DPdict 100 dict def
+DPdict begin
+/logscale false def
+/lpmin 1e-05 log def
+
+/box { %size x y box - draws box centered on x,y
+   2 index 0.5 mul sub            % x -= 0.5
+   exch 2 index 0.5 mul sub exch  % y -= 0.5
+   3 -1 roll dup rectfill
+} bind def
+
+/ubox {
+   logscale {
+      log dup add lpmin div 1 exch sub dup 0 lt { pop 0 } if
+   } if
+   3 1 roll
+   exch len exch sub 1 add box
+} bind def
+
+/lbox {
+   3 1 roll
+   len exch sub 1 add box
+} bind def
+
+/drawseq {
+% print sequence along all 4 sides
+[ [0.7 -0.3 0 ]
+  [0.7 0.7 len add 0]
+  [-0.3 len sub -0.4 -90]
+  [-0.3 len sub 0.7 len add -90]
+] {
+   gsave
+    aload pop rotate translate
+    0 1 len 1 sub {
+     dup 0 moveto
+     sequence exch 1 getinterval
+     show
+    } for
+   grestore
+  } forall
+} bind def
+
+/drawgrid{
+  0.01 setlinewidth
+  len log 0.9 sub cvi 10 exch exp  % grid spacing
+  dup 1 gt {
+     dup dup 20 div dup 2 array astore exch 40 div setdash
+  } { [0.3 0.7] 0.1 setdash } ifelse
+  0 exch len {
+     dup dup
+     0 moveto
+     len lineto 
+     dup
+     len exch sub 0 exch moveto
+     len exch len exch sub lineto
+     stroke
+  } for
+  [] 0 setdash
+  0.04 setlinewidth 
+  currentdict /cutpoint known {
+    cutpoint 1 sub
+    dup dup -1 moveto len 1 add lineto
+    len exch sub dup
+    -1 exch moveto len 1 add exch lineto
+    stroke
+  } if
+  0.5 neg dup translate
+} bind def
+
+end
+%%EndProlog
+DPdict begin
+%delete next line to get rid of title
+270 665 moveto /Helvetica findfont 14 scalefont setfont (dot.ps) show
+
+/sequence { (\
+AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGGGCCCGACCCCGC\
+) } def
+/len { sequence length } bind def
+
+72 216 translate
+72 6 mul len 1 add div dup scale
+/Helvetica findfont 0.95 scalefont setfont
+
+drawseq
+0.5 dup translate
+% draw diagonal
+0.04 setlinewidth
+0 len moveto len 0 lineto stroke 
+
+drawgrid
+%data starts here
+2 40 0.008985946 ubox
+2 45 0.997823911 ubox
+3 38 0.015407407 ubox
+3 44 0.999805819 ubox
+4 37 0.015523358 ubox
+4 42 0.003798443 ubox
+4 43 0.999714662 ubox
+5 36 0.015521416 ubox
+5 37 0.005315769 ubox
+5 41 0.005275140 ubox
+5 42 0.999592847 ubox
+5 43 0.015960829 ubox
+6 35 0.015495527 ubox
+6 36 0.007395251 ubox
+6 37 0.009581228 ubox
+6 40 0.006306569 ubox
+6 41 0.999394770 ubox
+6 42 0.022270904 ubox
+7 12 0.033119174 ubox
+7 35 0.008996487 ubox
+7 36 0.013543805 ubox
+7 37 0.021943287 ubox
+7 40 0.998087962 ubox
+7 41 0.027147619 ubox
+8 12 0.005537690 ubox
+8 14 0.003401735 ubox
+8 19 0.084381799 ubox
+8 21 0.013842096 ubox
+8 29 0.003637678 ubox
+8 30 0.003195860 ubox
+8 31 0.564670429 ubox
+8 35 0.013910041 ubox
+8 36 0.030052742 ubox
+8 37 0.027664574 ubox
+8 40 0.031062155 ubox
+9 14 0.009975001 ubox
+9 16 0.011726082 ubox
+9 18 0.083783617 ubox
+9 21 0.009347171 ubox
+9 26 0.003216376 ubox
+9 28 0.003536006 ubox
+9 30 0.569674749 ubox
+10 16 0.004134655 ubox
+10 19 0.054068132 ubox
+10 25 0.003341221 ubox
+10 29 0.573134014 ubox
+10 31 0.003764595 ubox
+10 35 0.006192055 ubox
+10 36 0.115148039 ubox
+10 37 0.692893869 ubox
+11 16 0.017245609 ubox
+11 18 0.049016665 ubox
+11 21 0.007525691 ubox
+11 28 0.573089033 ubox
+11 30 0.003674852 ubox
+12 23 0.004445619 ubox
+12 27 0.572577746 ubox
+12 32 0.004605472 ubox
+12 33 0.014446422 ubox
+12 34 0.016959594 ubox
+12 38 0.031186415 ubox
+13 18 0.016986001 ubox
+13 21 0.044473735 ubox
+13 26 0.523368062 ubox
+13 28 0.003890610 ubox
+14 20 0.048493987 ubox
+14 22 0.178624711 ubox
+14 23 0.053934603 ubox
+14 27 0.004353255 ubox
+14 32 0.004331857 ubox
+14 33 0.008834449 ubox
+14 38 0.003760604 ubox
+14 39 0.008165732 ubox
+15 21 0.179989395 ubox
+15 26 0.007423980 ubox
+15 28 0.007289737 ubox
+16 20 0.137657830 ubox
+16 22 0.218145506 ubox
+16 23 0.223495883 ubox
+16 27 0.007686743 ubox
+16 38 0.005682773 ubox
+16 39 0.016619574 ubox
+17 21 0.167465426 ubox
+17 26 0.009770155 ubox
+17 28 0.005115720 ubox
+18 22 0.043006132 ubox
+18 23 0.025694606 ubox
+18 27 0.004311820 ubox
+18 33 0.003524146 ubox
+18 38 0.013872218 ubox
+18 39 0.256628540 ubox
+19 23 0.020227685 ubox
+19 27 0.025622446 ubox
+19 32 0.003505710 ubox
+19 38 0.265490835 ubox
+20 26 0.023290016 ubox
+20 28 0.005246776 ubox
+21 27 0.005365661 ubox
+21 38 0.031053470 ubox
+21 39 0.030685320 ubox
+22 26 0.003838248 ubox
+23 35 0.815302125 ubox
+23 36 0.057499916 ubox
+23 37 0.005564576 ubox
+24 33 0.010952435 ubox
+24 34 0.818558480 ubox
+25 32 0.012496249 ubox
+25 33 0.818409265 ubox
+26 32 0.808086513 ubox
+27 31 0.594612073 ubox
+27 35 0.005353299 ubox
+28 34 0.005318399 ubox
+29 33 0.003288116 ubox
+30 39 0.060643776 ubox
+31 38 0.077109369 ubox
+32 36 0.006010389 ubox
+32 37 0.102892747 ubox
+32 41 0.003722879 ubox
+33 37 0.006007612 ubox
+33 40 0.005241308 ubox
+2 45 0.9500000 lbox
+3 44 0.9500000 lbox
+4 43 0.9500000 lbox
+5 42 0.9500000 lbox
+6 41 0.9500000 lbox
+7 40 0.9500000 lbox
+10 37 0.9500000 lbox
+23 35 0.9500000 lbox
+24 34 0.9500000 lbox
+25 33 0.9500000 lbox
+26 32 0.9500000 lbox
+27 31 0.9500000 lbox
+showpage
+end
+%%EOF

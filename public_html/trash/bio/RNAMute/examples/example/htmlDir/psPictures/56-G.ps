@@ -1,0 +1,168 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: PS_dot.c, ViennaRNA Package
+%%CreationDate: Tue Sep 20 15:30:07 2005
+%%Title: Rna secondary Structure Plot
+%%BoundingBox: 66 210 518 662
+%%DocumentFonts: Helvetica
+%%Pages: 1
+%%EndComments
+
+%Options: -noLP 
+100 dict begin
+/fsize  14 def
+% toggles: if you set them all to  false  the plot stays empty
+/drawbases   true def  % set to  false  to leave out sequence
+/drawoutline true def  % set to  false  to leave out backbone
+/drawpairs   true def  % set to  false  to not draw lines connecting pairs
+% data start here
+/sequence (\
+CGGCUCGUCGCAUCCUGGGGCUGAAGAAGGUCCCAAGGGUUGGGCUGUUCGCCCAGUAAAGCGGCACGCGAGCUGG\
+) def
+/coor [
+[110.508 278.059]
+[109.896 263.072]
+[109.284 248.084]
+[108.672 233.097]
+[108.061 218.109]
+[107.449 203.122]
+[106.837 188.134]
+[106.225 173.147]
+[104.394 158.259]
+[101.355 143.570]
+[98.316 128.881]
+[82.294 122.879]
+[72.465 108.875]
+[72.266 91.767]
+[59.484 83.917]
+[46.703 76.066]
+[33.764 68.478]
+[20.673 61.156]
+[7.581 53.833]
+[-5.510 46.510]
+[-18.601 39.188]
+[-31.692 31.865]
+[-46.831 36.403]
+[-60.705 28.834]
+[-65.083 13.648]
+[-57.367 -0.145]
+[-42.136 -4.362]
+[-28.425 3.499]
+[-24.369 18.774]
+[-11.278 26.096]
+[1.813 33.419]
+[14.904 40.742]
+[27.995 48.064]
+[41.086 55.387]
+[48.674 55.918]
+[54.553 63.285]
+[67.335 71.135]
+[80.117 78.986]
+[96.468 71.286]
+[114.198 74.793]
+[124.695 64.079]
+[135.193 53.365]
+[145.691 42.651]
+[156.189 31.936]
+[166.687 21.222]
+[167.962 5.230]
+[181.340 -3.625]
+[196.559 1.451]
+[201.944 16.563]
+[193.364 30.119]
+[177.401 31.720]
+[166.903 42.434]
+[156.405 53.148]
+[145.908 63.863]
+[135.410 74.577]
+[124.912 85.291]
+[128.320 94.089]
+[128.716 103.515]
+[126.058 112.568]
+[120.628 120.284]
+[113.005 125.842]
+[116.044 140.531]
+[119.083 155.220]
+[122.597 158.804]
+[124.401 162.947]
+[124.547 166.969]
+[123.328 170.297]
+[121.213 172.535]
+[121.824 187.522]
+[122.436 202.510]
+[123.048 217.497]
+[123.660 232.485]
+[124.272 247.472]
+[124.884 262.460]
+[125.495 277.447]
+[128.470 296.600]
+] def
+/pairs [
+[1 75]
+[2 74]
+[3 73]
+[4 72]
+[5 71]
+[6 70]
+[7 69]
+[8 68]
+[9 63]
+[10 62]
+[11 61]
+[14 38]
+[15 37]
+[16 36]
+[17 34]
+[18 33]
+[19 32]
+[20 31]
+[21 30]
+[22 29]
+[40 56]
+[41 55]
+[42 54]
+[43 53]
+[44 52]
+[45 51]
+] def
+
+/cshow  { dup stringwidth pop fsize neg 3 div exch neg 2 div exch
+          rmoveto show} bind def
+1 setlinejoin
+1 setlinecap
+0.8 setlinewidth
+72 216 translate
+72 6 mul 300.961 div dup scale
+82.050 4.362 translate
+/Helvetica findfont fsize scalefont setfont
+% draw the outline
+drawoutline {
+  newpath
+  coor 0 get aload pop 0.8 0 360 arc
+  coor {aload pop lineto} forall
+  stroke
+} if
+% draw bases
+drawbases {
+  0
+  coor {
+    aload pop moveto
+    dup sequence exch 1 getinterval  cshow
+    1 add
+  } forall
+  pop
+} if
+% draw base pairs
+drawpairs {
+  0.7 setlinewidth
+  [9 3.01] 9 setdash
+  newpath
+  pairs {aload pop
+     coor exch 1 sub get aload pop moveto
+     coor exch 1 sub get aload pop lineto
+  } forall
+  stroke
+} if
+% show it
+showpage
+end
+%%EOF

@@ -1,0 +1,161 @@
+Running Benchmark script
+RF00184
+Running CCAUAACUACGUCUACAUAACCGACGCCUACCCCAGUUUCAUAGUAUUUUCUGG
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01322
+Running GUAGCACCCGGCCGCGAGGCCGGGUGAGGAUUGAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01327
+Running AUUUACAUACCACUUAGUUAAUAUAAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01326
+Running AUUAAAAUAAGACCGUUUCGGAAUGGAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01338
+Running CUUUCAAUUCCUUUUGGGAUUAAUC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01330
+Running GUAUUCCGGGGCCAUGAUGCCCCGGCCUCAUUGAAGC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01342
+Running AUUUCAAUCAACGCCCCGAGGAAGAGGGGAUUAAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01381
+Running UGACUAGCGGUAGGCUAGAAGGAG
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01358
+Running AUUUCCAUCCUCCAAGAGGUCUUAUUUUAAU
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01359
+Running AUUCAAAUAACCAAAAUCCUCGGAAGGGGAUUAAAACG
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01352
+Running CUUUCUAUUCCACUACGUUCAGAUAAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01353
+Running CUUCCAUACUAUCUAGUAAUUCUUAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01354
+Running CUUUCAAUCCUCUUUUUGAGAUUC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01356
+Running GGCAAAGCCCGCCUGCGCGGGCUA
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01357
+Running GUUUCAAUCCUCUACGAGGCUAACGAGGUUUGCAACC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01317
+Running CUUCACUGCCGUAUAGGCAGCCACAAAU
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF00469
+Running UGGUGCCUACUCCUGCUUUCUGUAGGGGUAGGCAUCU
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01369
+Running GUCGAGACGGACUGAAAACCCAGAACGGGAUUGAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01368
+Running CCAAUAAUCCCUCAUCUAAAAAUCCAACCACUGAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01374
+Running CUAACAGUAGUUUACCAAAUAAUUUAGCGACUGAAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01380
+Running GGCGACUGGUGAGUACGCC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF00037
+Running GUUCCUGCUUCAACAGUGUUUGGAUGGAAC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF00032
+Running ACAACGGCUCUUUUUAGAGCCACCAA
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF00847
+Running AGGUGAGUUAGAUCUCAUAUCCUUCCGCAAAAUGGAAAUGAUAUGUAAUCUAGCUUACAG
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+RF01328
+Running CUUUCUAAUCCCUCUUGGGAUUUUC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+HCV
+Running AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling
+Structural Heuristic
+Mutation Heuristic
+TAR
+Running GGUCUCUCUGGUUAGACCAGAUCUGAGCCUGGGAGCUCUCUGGCUAACUAGAGAACC
+time, correlation, #sequences
+RNAMutants and FixedCGSampling

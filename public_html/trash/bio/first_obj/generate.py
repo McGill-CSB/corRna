@@ -1,0 +1,255 @@
+#!/usr/bin/env python
+import sys
+import re
+import commands
+import shutil
+import getopt
+import os, glob, sys
+import smtplib
+import os.path
+import random, math
+from multiprocessing import Process, Lock
+from decimal import Decimal
+from email.mime.text import MIMEText
+
+DEBUG = True
+dummy = 1
+def usuage():
+	print "-s [sequence]"
+	print "-b BOOTSTRAP OPTION"
+	print "-c USES RNAmutant && fixedCGSampling to find correlations"
+	print "sample"
+	print "./generate.pl -b -c -s AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC"
+def startRNAfold(type, name):
+	print "Start RNAfold" 
+	#path = './'
+	#for infile in glob.glob( os.path.join(path, '*.gen')):
+	infile = name
+	print infile
+	f = open(infile, 'r')
+	for line in f:
+		x = open('readline.tmp', 'w')
+		x.write(line)
+		x.close()
+		out = commands.getoutput('cat readline.tmp @- | RNAfold -p -d0')
+		shutil.move('dot.ps',type+'-'+line.strip()+'.ps')			
+	f.close()
+	commands.getoutput('mv '+infile+' '+infile+'.done')
+	print "RNAfold completed"
+def GCcontent(sequence):
+	gc=0;
+	l = 0;
+	s = re.compile("C|G|c|g")
+	for c in sequence:
+		l+=1
+		if(s.match(c)):
+			gc+=1
+	return (Decimal(str(gc)) / Decimal(str(l))).quantize(Decimal("0.0001"))
+					
+def wildtype(sequence):
+	x = open('readline.tmp', 'w')
+	x.write(sequence)
+	x.close()
+	commands.getoutput('cat readline.tmp @- | RNAfold -p -d0')
+	while(os.path.exists('rna.ps') != True):
+		dummy = 1
+	shutil.move('dot.ps','wildtype.ps')
+
+def getbpp():
+	print "Start ps-adapter"
+	commands.getoutput('./ps-adapter.pl -o wildtype')
+	commands.getoutput('./ps-adapter.pl -o GC')
+	commands.getoutput('./ps-adapter.pl -o RM')
+	print "ps-adapter completed"
+
+def correlate():
+	path = './'
+	print "Start correlate"
+	for infile in glob.glob( os.path.join(path, 'RM*.in')):
+		commands.getoutput('./correlate.py -x wildtype.ps.in -y '+infile)
+	for infile in glob.glob( os.path.join(path, 'GC*.in')):
+		commands.getoutput('./correlate.py -x wildtype.ps.in -y '+infile)
+
+def par(sequence):
+#	pid = os.fork()
+	if(DEBUG):
+		print "process spawned"
+#	p=Process(target=PROC, args=(sequence,))
+#	p.start()
+	p=Process(target=rnaMutProc,args=(sequence,))
+	p.start()
+	p=Process(target=gcFixProc, args=(sequence,))
+	p.start()
+	p.join()
+
+def PROC(sequence):
+	if(os.getppid()): 
+		if(DEBUG):
+			print "Parent is working with RNAmutants"
+		#we are @ parent
+		#os.waitpid(pid, 0)
+		commands.getoutput('./RNAmutants -l lib -m 5 -s '+sequence + ' > rmutants.out')
+		while(os.path.exists('rmutants.out') != True):
+			dummy = 1
+		print "RNAmutants computation completed..."
+		commands.getoutput('./mutants-adapter.pl')
+		while(os.path.exists('rmutants.out.gen') != True):
+			dummy = 1
+		print "mutants-adapter parsing completed.."
+		commands.getoutput('mv rmutants.out rmutants.out.done')
+		startRNAfold("RM","rmutants.out.gen")
+
+	if(os.getpid()):
+		if(DEBUG):
+			print "Child is working with fixedGCSampling"
+		#we are the child
+		gc = GCcontent(sequence)
+		commands.getoutput('./fixedCGSampling.py '+sequence + ' -n 10 -g '+str(gc)+' -e 0.05 > fixedGC.out')
+		while(os.path.exists('fixedGC.out') != True):
+			dummy = 1
+		print "FixedGC computation completed..."
+		commands.getoutput('./gc-adapter.pl')
+		print "gc-adapater parsing complete..."
+		while(os.path.exists('fixedGC.out.gen') != True):
+			dummy = 1
+		commands.getoutput('mv fixedGC.out fixedGC.out.done')
+		startRNAfold("GC","fixedGC.out.gen")
+
+def rnaMutProc(sequence):
+	if(os.getppid()):
+		if(DEBUG):
+			print "Parent is working with RNAmutants"
+		#we are @ parent
+		#os.waitpid(pid, 0)
+		commands.getoutput('./RNAmutants -l lib -m 5 -s '+sequence + ' > rmutants.out')
+		while(os.path.exists('rmutants.out') != True):
+			dummy = 1
+		print "RNAmutants computation completed..."
+		commands.getoutput('./mutants-adapter.pl')
+		while(os.path.exists('rmutants.out.gen') != True):
+			dummy = 1
+		print "mutants-adapter parsing completed.."
+		commands.getoutput('mv rmutants.out rmutants.out.done')
+		startRNAfold("RM","rmutants.out.gen")
+def gcFixProc(sequence):
+	if(os.getppid()):
+		if(DEBUG):
+			print "Child is working with fixedGCSampling"
+		#we are the child
+		gc = GCcontent(sequence)
+		commands.getoutput('./fixedCGSampling.py '+sequence + ' -n 10 -g '+str(gc)+' -e 0.05 > fixedGC.out')
+		while(os.path.exists('fixedGC.out') != True):
+			dummy = 1
+		print "FixedGC computation completed..."
+		commands.getoutput('./gc-adapter.pl')
+		print "gc-adapater parsing complete..."
+		while(os.path.exists('fixedGC.out.gen') != True):
+			dummy = 1
+		commands.getoutput('mv fixedGC.out fixedGC.out.done')
+		startRNAfold("GC","fixedGC.out.gen")
+
+def bootstrap(wildtype): 
+	print "bootstrap started"
+	x = open("fixedGC.more", "r")
+	s = re.compile('^\d+$')
+	mutations = 0
+	print "removing *.mutations && *.map"
+	commands.getoutput("rm *.mutations")
+	commands.getoutput("rm *.map")
+	flag = 0
+	for line in x:
+		if(s.match(line)):
+			mutations = int(line.strip())
+			if(mutations != 0):
+				kSeq = sequenceGenerator(wildtype, mutations)	
+				mute = open("M"+str(mutations)+".mutations","w")
+				for se in kSeq:
+					mute.write(se+"\n")
+				mute.close
+				startRNAfold("M"+str(mutations), "M"+str(mutations)+".mutations")
+				p=Process(target=parallelCor, args=(wildtype,mutations,))
+				flag = 1
+				p.start()
+	if(flag == 1):
+		p.join()
+	print "bootstrap completed"
+	return	
+def parallelCor(wildtype, mutations):
+	if(os.getppid()):
+		path = './'
+		print "process spawn for wild type of mutation of "+str(mutations)
+		out = commands.getoutput("./ps-adapter.pl -o M"+str(mutations))
+		for infile in glob.glob( os.path.join(path, 'M'+str(mutations)+'*.in')):
+			out = commands.getoutput('./correlate.py -x wildtype.ps.in -y '+infile+' -o mutations-'+str(mutations)+'.bqq.map')
+		#	print out
+		print "Completed process for wild type of mutation of "+str(mutations)
+
+def sequenceGenerator(wildtype, n):
+	kSequence = []	
+	for i in range(1000):	
+		kSequence.append(sequenceRandomizer(wildtype, n))
+	return kSequence
+
+def substring(stri, posi, ch):
+	return stri[:posi]+ch+stri[posi+1:]
+
+def sequenceRandomizer(wildtype, n):
+	random.seed()
+	for i in range(n):
+		x = random.randint(1,len(wildtype)-1)
+		wildtype = substring(wildtype,x,ranRNA(wildtype[x]))
+	return wildtype
+
+def ranRNA(c):	
+	random.seed()	
+	x = random.randint(0,3)	
+	rna = ["A","C","G","U"]
+	if(rna[x] == c): 
+		return ranRNA(c)
+	return rna[x]
+### main ####
+try:
+	optlist, args = getopt.getopt(sys.argv[1:],'cs:hb',["help"])
+except getopt.GetoptError, err:
+	print str(err)
+	print usuage()
+	sys.ext(2)
+sequence = ''
+BOOTSTRAP = 0
+COMPARE = 0
+for opt, query in optlist:
+	if opt == "-s":
+		sequence = query
+	elif opt in ("-h", "--help"):
+		usuage()
+		sys.exit()
+	elif opt == "-b":
+		BOOTSTRAP = 1	
+	elif opt == "-c":
+		COMPARE = 1
+	else:
+		assert False, "unhandled option"
+if(sequence !=  ''):
+	print "Lets start...."
+	if(COMPARE == 1):
+		print "removing previous bpp-results.txt && *.in && *.ps"
+		commands.getoutput("rm bpp-results.txt | rm *.in | rm *.ps")
+		wildtype(sequence)	
+		par(sequence)
+		getbpp()
+		correlate()
+	if(BOOTSTRAP == 1):
+		bootstrap(sequence)	
+	
+##display where to find results
+	print " "
+	print " "
+	print "---------------------------------------------------------------"
+	if(BOOTSTRAP == 1):
+		print "M[n]-* means random sequence provided from generator of n mutation size"
+		print "correlation results can be found in its respected M[n]*.bqq.map"
+	if(COMPARE == 1):
+		print "GC-* means sequence produced from fixedCGSampling"
+		print "RM-* means sequence produced from RNAmutants"
+		print "results can be found in bpp-results.txt"
+	print "all jobs Completed"

@@ -1,0 +1,392 @@
+0 3.73004169401074e+02
+1 2.39040312454775e+05
+2 2.29619795808165e+07
+3 3.35202454435403e+09
+4 1.36364470140092e+11
+5 2.39863887506686e+12
+>> Superoptimal structure(s):
+> 0-superoptimal structure
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+> 1-superoptimal structure
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+> 2-superoptimal structure
+GAUCUGAGCCUGGGgGCUCaC	(-9.00)
+....((((((....)))))).
+> 3-superoptimal structure
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+> 4-superoptimal structure
+GAUCUGAGCCcGGaAGggCUC	(-14.10)
+.....((((((....))))))
+> 5-superoptimal structure
+GAUggGAGCCcGGGgGCUCcC	(-15.10)
+...(((((((....)))))))
+>> Sampling mutants from file samples.txt:
+> sampling 30 sequence and secondary structure(s) with 0 mutations
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-0.10)
+...........(((....)))
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-2.20)
+((...((((......))))))
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-2.20)
+((...((((......))))))
+GAUCUGAGCCUGGGAGCUCUC	(-0.60)
+......(((......)))...
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-2.20)
+((...((((......))))))
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(1.80)
+.....(((.((...))..)))
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGC......GCUCUC	(-7.90)
+.....((((......))))..
+GAUCUGAGC......GCUCUC	(-7.90)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+GAUCUGAGCCUGGGAGCUCUC	(-3.50)
+.....((((......))))..
+> sampling 30 sequence and secondary structure(s) with 1 mutations
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-6.10)
+((...(((((....)))))))
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-4.80)
+(....(((((....))))).)
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-6.10)
+((...(((((....)))))))
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-6.10)
+((...(((((....)))))))
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGAGCUCgC	(-4.40)
+....(((((......))))).
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCUC	(-6.10)
+((...(((((....)))))))
+GAUCUGAGCCUGGGgGCUCUC	(-6.10)
+((...(((((....)))))))
+GAUCUGAGCCUGGGgGCUCUC	(-5.40)
+.....((((......))))..
+GAUCUGAGCCUGGGgGCUCUC	(-6.10)
+((...(((((....)))))))
+GAUCUGAGCCUGGGgGCUCUC	(-6.10)
+((...(((((....)))))))
+> sampling 30 sequence and secondary structure(s) with 2 mutations
+GAUCUGAGCCcGGGgGCUCUC	(-8.50)
+.....(((((....)))))..
+GAUCUGAGCCcGGGgGCUCUC	(-8.50)
+.....(((((....)))))..
+GAUCaGAGCCUGGGgGCUCUC	(-9.00)
+....((((((....)))))).
+GAUCUGAGCCUGGGgGCUCaC	(-9.00)
+....((((((....)))))).
+GAUCUGAGCCUGGGgGCUCgC	(-7.40)
+.....(((((....)))))..
+GuUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCgGAGCCUGGGAGCUCUg	(-7.00)
+...((((((......))))))
+GAgCUGAGCCUGGGAGCUCgC	(-3.30)
+..((.(((........)))))
+GAUCUGAGCCUGGGgGCUCgC	(-8.30)
+....((((((....)))))).
+GAUCgGAGCCUGGGgGCUCUC	(-7.00)
+....(((((......))))).
+GAUggGAGCCUGGGAGCUCUC	(-7.10)
+...((((((......))))))
+GAUCgGAGCCUGGGgGCUCUC	(-9.00)
+....((((((....)))))).
+GAUCUGAGCCUGGagGCUCUC	(-7.30)
+.....(((((....)))))..
+GAUCUGAGCgUGGGAGCgCUC	(-5.10)
+......(((((....))))).
+GAUCgGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGAGggCUC	(-8.50)
+.....((((((....))))))
+GAUCUGAGCCUGGGgGCUCaC	(-9.00)
+....((((((....)))))).
+GAgCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGCCUGGGgGCUCaC	(-7.40)
+.....(((((....)))))..
+GAUCUGAGaCUGGGAGgUCUC	(-6.40)
+.....((((((....))))))
+GAUCUGAGCCUuGGAGCgCUC	(-7.40)
+.....(((((.....).))))
+GAUCUGAGCgUGGGAGCgCUC	(-8.00)
+.....((((((....))))))
+GAUCUGAGCCUGcGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAaCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUCgGAGCgUGGGAGCUCUC	(-6.30)
+....(((((......))))).
+GAUCaGAGCCUGGGgGCUCUC	(-9.00)
+....((((((....)))))).
+GAUCUGAGCCUGGGgGCUCUg	(-7.00)
+...(.(((((....))))).)
+GAUCUGAGCCUGGGgGCUCaC	(-7.00)
+....(((((......))))).
+GcUCUGAGCCUGGGgGCUCUC	(-7.40)
+.....(((((....)))))..
+GAUgaGAGCCUGGGAGCUCUC	(-5.10)
+....(((((......))))).
+> sampling 30 sequence and secondary structure(s) with 3 mutations
+GAUuaGAGCCUGGGgGCUCUC	(-9.00)
+....((((((....)))))).
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GcUCccAGCCUGGGAGCUCUC	(-10.70)
+((((((.....))))))....
+GcUCUGAGCCaGGGAGCaCUC	(-4.40)
+(((((.......)))))....
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUgUGAGCCUGGGgGCUCaC	(-11.70)
+...(((((((....)))))))
+GAUCaGAGCCUGcGAGCUCUg	(-7.70)
+...((((((......))))))
+GAUCUGAGCCUGGGgGCUCag	(-11.60)
+...(((((((....)))))))
+GAUgaGAGCCUGGGgGCUCUC	(-11.90)
+...(((((((....)))))))
+GAUCUGAGCCcGGGAGggCUC	(-9.70)
+......(((((....))))).
+GAUCUGAGCCUGaGAGggCUC	(-11.00)
+.....((((((....))))))
+GAUCUGAGCCUucGgGCUCUC	(-10.40)
+.....(((((....)))))..
+GcUCccAGCCUGGGAGCUCUC	(-10.70)
+((((((.....))))))....
+GAUCUGAGCgcGGGAGCgCUC	(-11.80)
+.....((((((....))))))
+GAUCaGAGCCUGGGgGCUCUg	(-11.60)
+...(((((((....)))))))
+GcUCccAGCCUGGGAGCUCUC	(-10.40)
+(((((((...)))))))....
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUCUGAGCgcGGGAGCgCUC	(-11.80)
+.....((((((....))))))
+GAgCUccGCCUGGGAGCUCUC	(-11.70)
+(((((((.....)))))))..
+GAUCUGAGaCcGGGAGgUCUC	(-10.50)
+.....((((((....))))))
+GAgCUccGCCUGGGAGCUCUC	(-11.70)
+(((((((.....)))))))..
+GAUCUGcGCCUGGcAGaUCUC	(-9.50)
+(((((((.....)))))))..
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUgUGAGCCUGGGgGCUCaC	(-11.70)
+...(((((((....)))))))
+GAUCUGAGCCUGGGgGCUCag	(-11.60)
+...(((((((....)))))))
+GAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAgCUGAGCCUGGGgGCUCgC	(-9.40)
+..((.(((((....)))))))
+GAUgaGAGCCUGGGgGCUCUC	(-11.90)
+...(((((((....)))))))
+GAUgUGAGCCUGGGgGCUCgC	(-11.30)
+...(((((((....)))))))
+> sampling 30 sequence and secondary structure(s) with 4 mutations
+GAUCUGAGCCcGuGAGggCUC	(-14.10)
+.....((((((....))))))
+GAUCUGcuCCUGGGAGCgaUC	(-9.70)
+((((.((((....))))))))
+GAUCgGAGCCUGuGgGCUCUg	(-10.90)
+...(((((((....)))))))
+GAUCUGAGCCcGGaAGggCUC	(-14.10)
+.....((((((....))))))
+GAUgUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+cAUCUGAGCCUcGGgGCUCgC	(-8.30)
+....((((((....)))))).
+GgUCgGAGCCUGGGgGCUCcC	(-10.70)
+....((((((....)))))).
+GAcCUGcGCCUGGcAGgUCUC	(-11.50)
+(((((((.....)))))))..
+GAUCgGAGCCUGGGgGCUCcg	(-13.10)
+...(((((((....)))))))
+GcUCccAGCCUGGGAGCgCUC	(-10.70)
+((((((.....))))))....
+GAUCUGAGCCcGcGAGggCUC	(-13.60)
+.....((((((....))))))
+GAgCUGccCCUGGcAGCUCUC	(-13.10)
+((((((((...))))))))..
+GcUCccAuCCUGGGAGCUCUC	(-10.40)
+(((((((...)))))))....
+GAUCUGAGCCcGGaAGggCUC	(-14.10)
+.....((((((....))))))
+GAUCccAGCCUGGGguCUCUC	(-7.80)
+(((((((...)))))))....
+GAgCUccGaCUGGGAGCUCUC	(-11.70)
+(((((((.....)))))))..
+GAUCgGAGCgUGGGcGCUCUg	(-10.40)
+...(((((((....)))))))
+GcUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUCaGAGCCcGGGgGCUCUg	(-12.70)
+...(((((((....)))))))
+GAUgUGAGCCcGGGgGCUCaC	(-12.80)
+...(((((((....)))))))
+GAUCUGAGCCcGGaAGggCUC	(-14.10)
+.....((((((....))))))
+GAUaUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GccCUGAGCCUcGGgGCUCUC	(-10.00)
+((((((.....))))))....
+aAUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUCgGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUCgGAGCCUGGGgGCUCcg	(-13.10)
+...(((((((....)))))))
+GAgCUGcGCCUGGcAGCUCgC	(-11.50)
+(((((((.....)))))))..
+GAUggGAGCCUGGGgGCUCcC	(-14.00)
+...(((((((....)))))))
+GAUCUGAGCCcGuGAGggCUC	(-14.10)
+.....((((((....))))))
+GAgCUccGCuUGGGAGCUCUC	(-11.70)
+(((((((.....)))))))..
+> sampling 30 sequence and secondary structure(s) with 5 mutations
+GAaCUGAGCCcGGaAGggCUC	(-14.10)
+.....((((((....))))))
+GAUgUGAGCCgGGGAcggCUC	(-13.40)
+.....((((((....))))))
+GAUCUGAGCCUacGgGCUCgg	(-13.40)
+...(((((((....)))))))
+uAUaUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUCgGAGCCUGaGgGCUCcg	(-13.10)
+...(((((((....)))))))
+GAUgaGAGCCUucGgGCUCUC	(-14.90)
+...(((((((....)))))))
+GAUCcGAGCCcGGGgGCUCgg	(-14.20)
+...(((((((....)))))))
+GAUCUGAGCCUacGgGCUCag	(-14.10)
+...(((((((....)))))))
+GAUCUGAGCCUacGgGCUCgg	(-13.40)
+...(((((((....)))))))
+GAUgUGgGCCUGGGgGCcCaC	(-13.80)
+...(((((((....)))))))
+GAUCcGAGCCcGuGAGggCUC	(-14.10)
+.....((((((....))))))
+uAUCUGAGCgcGcGAGCgCUC	(-12.80)
+.....((((((....))))))
+uAUCUGAGCCcGuGAGggCUC	(-14.10)
+.....((((((....))))))
+GgUCUGAGCCcGaGAGggCUC	(-13.10)
+.....((((((....))))))
+GAUCgGgGCCUGGGAGgcCcC	(-12.50)
+....(((((((...)))))))
+uAUCUGgGCCcGGGAGggCUC	(-11.70)
+.....((((((....))))))
+ugUCUGAGCCcGGGAGggCUC	(-12.60)
+.....((((((....))))))
+GAUCgGgGCCUGGGAGgcCcC	(-12.50)
+....(((((((...)))))))
+aAUCaGAGCCcGGGgGCUCUg	(-12.70)
+...(((((((....)))))))
+GAUgUGAGCCUucGgGCUCgC	(-14.30)
+...(((((((....)))))))
+GAUggGgGCCUGGGAGCcCcC	(-12.20)
+...((((((......))))))
+GAUgUGAGCCcGuGAGggCUC	(-14.10)
+.....((((((....))))))
+GggCUGcGCCUGGcAGCUCaC	(-10.60)
+(((((((.....)))))))..
+GAUCcGAGCCcGGGgGCUCgg	(-14.20)
+...(((((((....)))))))
+GAgCUcccgCUGGGAGCUCUC	(-13.00)
+(((((((.....)))))))..
+GAUgUGAGCCUucGgGCUCgC	(-14.30)
+...(((((((....)))))))
+GAUgaGgGCCUGGGgGCcCUC	(-14.00)
+...(((((((....)))))))
+GAUgcGAGCCcGGGgGCUCgC	(-14.30)
+...(((((((....)))))))
+GAgCUccGCCgGGGAGCUCUu	(-11.70)
+(((((((.....)))))))..
+GAUgUGAGCCUucGgGCUCaC	(-14.70)
+...(((((((....)))))))

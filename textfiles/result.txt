@@ -1,0 +1,35 @@
+0 1.58803352380056e+08
+1 7.54763592116821e+10
+2 3.90169054663315e+14
+>> Superoptimal structure(s):
+> 0-superoptimal structure
+AGCGGGGGAGACAUAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-11.10)
+.((((((..((((............))))(((....)))))))))
+> 1-superoptimal structure
+AGCGGGGGAGACAgAUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-14.60)
+.((((((..(((((..........)))))(((....)))))))))
+> 2-superoptimal structure
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-20.50)
+.((((((..(((((((......)))))))(((....)))))))))
+>> Sampling 10 mutants:
+> sampling 10 mutant(s) and secondary structure(s)
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-20.50)
+.((((((..(((((((......)))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-20.50)
+.((((((..(((((((......)))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-19.50)
+.((((((..((((((........))))))(((....)))))))))
+AGCGGGGGAGACAUgUAUCAUAGCaUGUCUCGUGCCCGACCCCGC	(-18.30)
+.((((((..(((((((......)))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-19.50)
+.((((((..((((((........))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-20.50)
+.((((((..(((((((......)))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-15.70)
+.((.((((.((((((........))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-20.50)
+.((((((..(((((((......)))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-19.50)
+.((((((..((((((........))))))(((....)))))))))
+AGCGGGGGAGACAggUAUCAUAGCCUGUCUCGUGCCCGACCCCGC	(-20.50)
+.((((((..(((((((......)))))))(((....)))))))))

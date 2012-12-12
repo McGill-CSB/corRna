@@ -1,0 +1,192 @@
+#!/usr/bin/perl -w
+use strict;
+use warnings;
+use Data::Dumper;
+use IO::File;
+use Getopt::Std;
+
+our($opt_f, $opt_u);
+getopts('f:u');
+#my $data = {};
+my @data;
+my $tmp = {};
+my $type=0;
+my $set = {};
+my $mutations = {};
+my $rnaMap = {};
+my @corr;
+
+#grab($opt_f);
+sub grabMutations() {
+	my $fname = shift;
+	my $type;
+	my @files = <mutations*.map>;
+	foreach(@files) {
+		my $fh = IO($_);
+		while(my $line = $fh->getline()) {
+			chomp($line);
+			if($line =~/M\d-/) {
+				$line=~s/^\.\///;
+				$type = $line;
+				$type=~s/-.*$//;	
+#				print $type. "\n";
+				$line =~s/M(.*)-//;
+				$line=~s/\..*$//;
+#				print $line."\n";
+				$tmp->{"seq"} = $line;
+			} elsif($line =~/correlation\:/) {
+				$line=~s/correlation\://;
+#				print $line."\n";	
+				$tmp->{"corr"} = $line;
+				push @{$mutations->{$type}}, $tmp;
+				$tmp = {};
+			}
+		}
+	}
+}
+
+sub grabMSet() {
+	my $type;
+	my $tmp;
+		my $fh = IO("fixedGC.more");
+		while(my $line = $fh->getline()) {
+			chomp ($line);		
+			if($line=~/^\d+$/) {
+				$line=~s/\s+$//;	
+				$tmp = $line;		
+			} elsif($line=~/\w+/) {
+				$line=~s/\s.*$//;
+				$rnaMap->{$line} = $tmp;
+			}
+		}
+}
+
+sub grab() {
+		my $fh = IO($opt_f);
+	while(my $line = $fh->getline()) {
+		chomp($line);
+		if($line =~ /RM-/) {
+			$line=~s/^\.\///;
+			$line=~s/RM-//;
+			$line=~s/\s+//;
+			$line=~s/\..*$//;
+			$tmp = $line;
+			$type = 'RM';
+		} elsif ($line =~ /GC-/) {
+			$line=~s/^\.\///;
+			$line=~s/GC-//;
+			$line=~s/\s+//;
+			$line=~s/\..*$//;
+			$tmp = $line;
+			$type = 'GC';
+		} elsif ($line =~/correlation\:/) {
+			$line=~s/correlation\://;
+		#	$data->{$type}->{$tmp} = $line;	
+			$set->{'seq'} = $tmp;
+			$set->{'corr'} = $line;
+			$set->{'set'} = $type;
+		#	push@{$data->{$type}}, $set;
+			push @data, $set;
+			$set = {};
+		}	
+	} 
+	$fh->close();
+}
+sub filter() {
+	my $c=0;
+	my @un = @_;
+	my $d = {};
+	foreach(@un) {
+		$d->{$_->{'seq'}}->{$_->{'set'}} = $_->{'corr'};
+	}	
+	print Dumper($d)."\n";
+	print "Before ".@un."\n";
+	print "Left ".$c."\n";
+	#shrink($d);
+}
+
+sub shrink() {
+	my $un = shift;
+	my @sh;
+	my $tmp = {};
+	while (my ($key, $value) = each (%$un)) {
+		print "$key \n";
+		$tmp->{'seq'} = $key;
+		$tmp->{'corr'} = ($un->{$key}->{'GC'}!='')?$un->{$key}->{'GC'}: $un->{$key}->{'RM'};
+		$tmp->{'set'} = ($un->{$key}->{'GC'}!='')?'GC':'RM';
+		push @sh, $tmp;
+	}
+	print echo(@sh);
+}
+
+sub echo() {
+	my @data = @_;
+	foreach(@data) {
+		print $_->{'seq'} . " t: ".$_->{'set'} . " " . $_->{'corr'}."\n";
+	}
+}
+
+
+sub IO() {
+	my $file = shift;
+	return new IO::File($file,"r") or die "File not found: $!\n";
+}
+sub O() {
+	my $file = shift;
+	return new IO::File($file,"w+") or die "Cant write...: $!\n";
+}
+
+sub echo_more(){
+	my @data = @corr;
+	my @muts;
+	my $tmp;
+	my @sorted;
+	my $counter=0;
+	my $num;
+	my $super;
+	my $percent=0;
+	foreach(@data) {
+		if($rnaMap->{$_->{'seq'}}) {
+			$counter = 0;
+			$num = $rnaMap->{$_->{'seq'}};
+			@muts = @{$mutations->{'M'.$num}};
+			$_->{'marker'} = 1;
+			$super = $_;
+			push @muts, $_;
+			@sorted = sort{$b->{'corr'} <=> $a->{'corr'}} @muts;
+
+	loop: {
+			foreach my $sss (@sorted) {
+				$counter++;	
+				if($sss->{'marker'}) {
+					last loop;
+				}
+			}
+	}		
+			print scalar (@{$mutations->{'M'.$num}})."\n";	
+			$percent = $counter / (scalar(@{$mutations->{'M'.$num}}) +1);		
+		} else {
+			$num = 0;
+			$percent = "---";
+		}	
+
+		print $_->{'seq'} . " t: ".$_->{'set'} . " " . $_->{'corr'}. " M:".$num." P:".$percent."\n";
+	}
+}
+
+#main
+
+#grabMutations();
+#print Dumper($mutations)."\n";
+#print Dumper(@data)."\n";
+
+#my @seq = sort{$a->{'seq'} cmp $b->{'seq'}} @data;
+
+#print echo(@seq);
+#print echo(@corr)."\n";
+#filter(@corr);
+grabMSet();
+grabMutations();
+grab();
+@corr = sort{$b->{'corr'} <=> $a->{'corr'}} @data;
+echo_more();
